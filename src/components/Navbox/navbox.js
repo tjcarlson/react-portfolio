@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import "./styles.css"
-class Navbox extends Component {
+import React, { Component } from "react";
+import "./styles.css";
 
+class Navbox extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="left"></div>
-        <div id="right"></div>
-        <div id="top"></div>
-        <div id="bottom"></div>
+        <div id="left" />
+        <div id="right" />
+        <div id="top" />
+        <div id="bottom" />
       </React.Fragment>
     );
   }

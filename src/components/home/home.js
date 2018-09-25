@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-import Navbox from '../Navbox/navbox'
-import "./styles.css"
+import React, { Component } from "react";
+import Navbox from "../Navbox/navbox";
+import "./styles.css";
 class Home extends Component {
   render() {
-    return (
-      <Navbox />
-    );
+    return <Navbox />;
   }
 }
 
