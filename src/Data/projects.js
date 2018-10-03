@@ -1,14 +1,16 @@
-const projects = [
+export const projects = [
   {
+    title: "Zelle Activity",
+    description: "blah blah",
+    link: "#",
     image: "#",
-    name: "Zelle Activity",
     key: "zelle_activity"
   },
   {
+    title: "Scribd Navigation",
+    description: "This is a description",
+    link: "Scribd Navigation",
     image: "#",
-    name: "Scribd Navigation",
     key: "scribd_navigation"
   }
 ];
-
-export default { projects };
