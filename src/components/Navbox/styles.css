@@ -41,10 +41,12 @@ a {
   border-bottom: 4px solid transparent;
   transition: border-bottom 0.5s;
   position: fixed;
+  transition: color 0.1s ease;
 }
 
 a:hover {
-  border-bottom-color: #52689b;
+  color: #f6d0d0;
+  transition: color 0.1s ease;
 }
 
 .work {

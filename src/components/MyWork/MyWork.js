@@ -6,7 +6,12 @@ class MyWork extends Component {
     return this.props.projects.map((project, index) => {
       return (
         <div className="projectCards">
-          <div>{project.title}</div>
+          <div
+            className="title"
+            onClick={() => this.props.click(project.title)}
+          >
+            {project.title}
+          </div>
           <div>{project.description}</div>
         </div>
       );
@@ -14,7 +19,17 @@ class MyWork extends Component {
   }
 
   render() {
-    return <div>{this.renderProjects()}</div>;
+    return (
+      <div>
+        <div
+          onClick={() => this.props.updateTitleState("HAHA IT'S ME")}
+          style={{ margin: "50px" }}
+        >
+          {this.props.title}
+        </div>
+        {this.renderProjects()}
+      </div>
+    );
   }
 }
 
