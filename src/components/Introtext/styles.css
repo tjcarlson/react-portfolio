@@ -1,4 +1,25 @@
 h1 {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  color: #00264e;
+  line-height: 1.3;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 16px;
+    width: 100%;
+  }
 }

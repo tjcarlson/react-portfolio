@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./styles.css";
 
+//how could i pulse color or change color of the text?
+
 class Introtext extends Component {
   render() {
     return (
