@@ -2,8 +2,33 @@
 #bottom,
 #left,
 #right {
-  background: #fff;
+  background-color: #fff;
   position: fixed;
+  transition: background-color 0.3s ease;
+}
+
+.social_links #top,
+.social_links #bottom,
+.social_links #left,
+.social_links #right {
+  background-color: #c2b9e9;
+  transition: background-color 0.3s ease;
+}
+
+.contact_me #top,
+.contact_me #bottom,
+.contact_me #left,
+.contact_me #right {
+  background-color: #51689b;
+  transition: background-color 0.3s ease;
+}
+
+.about_me #top,
+.about_me #bottom,
+.about_me #left,
+.about_me #right {
+  background-color: #f89f83;
+  transition: background-color 0.3s ease;
 }
 
 #left,
@@ -38,8 +63,6 @@ a {
   z-index: 4;
   color: #52689b;
   text-decoration: none;
-  border-bottom: 4px solid transparent;
-  transition: border-bottom 0.5s;
   position: fixed;
   transition: color 0.1s ease;
 }
