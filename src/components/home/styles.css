@@ -2,7 +2,7 @@ body {
   background-image: url("../assets/backgroundGradient.svg");
   background-attachment: fixed;
   background-size: cover;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Aktiv Grotesk Regular", sans-serif;
 }
 
 .app_container {

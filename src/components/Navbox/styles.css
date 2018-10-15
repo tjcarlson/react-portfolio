@@ -15,6 +15,10 @@
   transition: background-color 0.3s ease;
 }
 
+.social_links a {
+  color: #fff;
+}
+
 .contact_me #top,
 .contact_me #bottom,
 .contact_me #left,
@@ -29,6 +33,14 @@
 .about_me #right {
   background-color: #f89f83;
   transition: background-color 0.3s ease;
+}
+
+.about_me a {
+  color: #fff;
+}
+
+.contact_me a {
+  color: #fff;
 }
 
 #left,
@@ -65,6 +77,7 @@ a {
   text-decoration: none;
   position: fixed;
   transition: color 0.1s ease;
+  font-family: "Aktiv Grotesk Medium";
 }
 
 a:hover {
@@ -75,12 +88,12 @@ a:hover {
 .work {
   width: 100%;
   text-align: center;
-  padding-top: 8px;
+  padding-top: 10px;
 }
 .contact {
   position: fixed;
   top: 50%;
-  right: 8px;
+  right: 10px;
   transform-origin: 100% 0;
   transform: rotate(90deg) translate(50%, 0);
 }
@@ -95,7 +108,7 @@ a:hover {
 .social {
   position: fixed;
   top: 50%;
-  left: 8px;
+  left: 10px;
   transform-origin: 0 0;
   transform: rotate(-90deg) translate(-50%, 0);
 }

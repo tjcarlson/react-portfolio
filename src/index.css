@@ -1,5 +1,25 @@
+@font-face {
+  font-family: "Aktiv Grotesk Thin";
+  src: url("../src/Data/AktivGrotesk-Thin.otf");
+}
+
+@font-face {
+  font-family: "Aktiv Grotesk Regular";
+  src: url("../src/Data/AktivGrotesk-Regular.otf");
+}
+
+@font-face {
+  font-family: "Aktiv Grotesk Medium";
+  src: url("../src/Data/AktivGrotesk-Medium.otf");
+}
+
+@font-face {
+  font-family: "Aktiv Grotesk Bold";
+  src: url("../src/Data/AktivGrotesk-Bold.otf");
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Aktive Grotesk Regular";
 }

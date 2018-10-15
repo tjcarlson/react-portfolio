@@ -10,7 +10,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "my name is tim",
+      projectPage: "",
       activeTab: "my_work"
     };
   }
