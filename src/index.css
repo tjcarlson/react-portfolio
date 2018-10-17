@@ -1,24 +1,4 @@
 @font-face {
-  font-family: "Aktiv Grotesk Thin";
-  src: url("../src/Data/AktivGrotesk-Thin.otf");
-}
-
-@font-face {
-  font-family: "Aktiv Grotesk Regular";
-  src: url("../src/Data/AktivGrotesk-Regular.otf");
-}
-
-@font-face {
-  font-family: "Aktiv Grotesk Medium";
-  src: url("../src/Data/AktivGrotesk-Medium.otf");
-}
-
-@font-face {
-  font-family: "Aktiv Grotesk Bold";
-  src: url("../src/Data/AktivGrotesk-Bold.otf");
-}
-
-@font-face {
   font-family: "Circular Medium";
   src: url("../src/Data/lineto-circular-medium.woff");
 }
@@ -28,8 +8,13 @@
   src: url("../src/Data/lineto-circular-book.woff");
 }
 
+@font-face {
+  font-family: "Circular Bold";
+  src: url("../src/Data/lineto-circular-bold.woff");
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Aktive Grotesk Regular";
+  font-family: "Circular Regular";
 }

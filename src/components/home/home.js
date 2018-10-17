@@ -8,6 +8,7 @@ import "./styles.css";
 import AboutMe from "../Modals/AboutMe";
 import ContactMe from "../Modals/ContactMe";
 import SocialLinks from "../Modals/SocialLinks";
+import ProjectPage from "../ProjectPage/ProjectPage";
 
 class Home extends Component {
   constructor(props) {
@@ -74,11 +75,13 @@ class Home extends Component {
           click={this.click}
           onClick={this.showProject}
         />
-        {/*<ProjectPage
+        /*
+        <ProjectPage
           show={this.state.show}
           handleClose={this.hideProject}
           projects={myProjects}
-        />*/}
+        />
+        */
         {this.renderActiveModal()}
       </div>
     );
