@@ -7,12 +7,7 @@ class MyWork extends Component {
       return (
         <div className="projectCards">
           <div className="overlay">
-            <h1
-              className="title"
-              onClick={() => this.props.click(project.title)}
-            >
-              {project.title}
-            </h1>
+            <h1 className="title">{project.title}</h1>
             <p className="description">{project.description}</p>
           </div>
         </div>
@@ -21,17 +16,7 @@ class MyWork extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <div
-          onClick={() => this.props.updateTitleState("HAHA IT'S ME")}
-          style={{ margin: "50px" }}
-        >
-          {this.props.title}
-        </div>
-        {this.renderProjects()}
-      </div>
-    );
+    return <div>{this.renderProjects()}</div>;
   }
 }
 

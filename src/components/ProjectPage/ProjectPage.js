@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 import { ReactComponent as Close } from "../assets/close.svg";
 import "./styles.css";
+{
+  /* <Close onClick={this.props.handleClose} /> */
+}
+// how to add in the key of the project that is selected/clicked?
 
-class ProjectPage extends Component {
+export default class ProjectPage extends Component {
   render() {
+    const showHideClassName = this.props.show
+      ? "ProjectPage display-block"
+      : "ProjectPage display-none";
     return (
-      <div className="ProjectWrapper">
+      <div id="ProjectWrapper" className={showHideClassName}>
         <div className="Exit">
-          <Close />
           <div className="ProjectBody">
             <div className="Blurbs">
               <div className="ProjectFooter" />
@@ -18,5 +24,3 @@ class ProjectPage extends Component {
     );
   }
 }
-
-export default ProjectPage;
