@@ -1,0 +1,18 @@
+.background {
+  width: 60vw;
+  height: 60vh;
+  margin: 80px 80px 80px 80px;
+  padding: 40px;
+  background: #51689b;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 400px) {
+  .background {
+    margin: 0;
+  }
+}

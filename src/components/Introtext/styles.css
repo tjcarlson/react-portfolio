@@ -12,7 +12,7 @@ h1 {
 
 @media (max-width: 800px) {
   h1 {
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
   }
 }

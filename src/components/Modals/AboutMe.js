@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ReactComponent as Close } from "../assets/close.svg";
-import "./styles.css";
+import "./aboutme.css";
 {
   /* <Close onClick={this.props.handleClose} /> */
 }

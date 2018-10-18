@@ -1,0 +1,23 @@
+.contactMe {
+  background-color: #51689b;
+  color: #fff;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 80px;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 400px) {
+  .contactMe {
+    margin: 0px;
+  }
+}
