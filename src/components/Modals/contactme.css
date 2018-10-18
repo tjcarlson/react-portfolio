@@ -1,6 +1,5 @@
 .contactMe {
-  background-color: #51689b;
-  color: #fff;
+  background: #51689b;
   z-index: 5;
   display: flex;
   align-items: center;

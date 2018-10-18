@@ -1,13 +1,17 @@
-.background {
-  width: 60vw;
-  height: 60vh;
-  margin: 80px 80px 80px 80px;
-  padding: 40px;
-  background: #51689b;
-  z-index: 20;
+.aboutme {
+  background-color: #f89f83;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
   top: 0;
   left: 0;
-  position: fixed;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 80px;
   transition: background-color 0.3s ease;
 }
 

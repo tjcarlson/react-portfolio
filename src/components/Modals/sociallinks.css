@@ -1,20 +1,18 @@
-.modal {
-  width: 100vh;
-  height: 100vh;
+.socialLinks {
+  background-color: #c2b9e9;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
   top: 0;
   left: 0;
-  position: fixed;
-}
-
-.socialLinks {
-  z-index: 20;
-  margin: 80px 80px 80px 80px;
-  top: 50%;
-  left: 50%;
-  display: grid;
-  background: #c2b9e9;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 80px;
   transition: background-color 0.3s ease;
-  position: fixed;
 }
 
 .block {

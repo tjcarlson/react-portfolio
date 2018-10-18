@@ -9,7 +9,7 @@ import "./aboutme.css";
 export default class AboutMe extends Component {
   render() {
     return (
-      <div>
+      <div className="aboutme">
         About Me
         <div onClick={this.props.closeModal}>CLOSE THIS MODAL</div>
       </div>

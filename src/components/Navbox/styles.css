@@ -5,6 +5,7 @@
   background-color: #fff;
   position: fixed;
   transition: background-color 0.3s ease;
+  z-index: 500;
 }
 
 .social_links #top,
