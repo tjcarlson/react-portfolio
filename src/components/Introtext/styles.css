@@ -1,10 +1,11 @@
-.intro h1 {
-  font-size: 14px;
+.intro {
+  font-size: 26px;
   width: 80%;
   text-align: center;
   margin: auto;
   margin-bottom: 2vh;
-  color: #fff;
+  color: #32034d;
+  opacity: 0.8;
   line-height: 1.3;
   font-family: "Circular Regular";
 }

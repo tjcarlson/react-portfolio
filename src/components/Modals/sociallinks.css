@@ -12,11 +12,11 @@
   overflow-y: auto;
   overflow-x: hidden;
   margin: 80px;
-  transition: background-color 0.3s ease;
+  transition: fade-in 0.3s ease;
 }
 
 .block {
-  background: #000;
+  background: #c2b9e9;
   color: #fff;
 }
 

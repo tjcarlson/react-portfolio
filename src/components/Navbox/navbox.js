@@ -12,7 +12,7 @@ class Navbox extends Component {
       return (
         <div key={tab.key} onClick={e => this.updateActiveTab(e, tab.key)}>
           <div id={tab.id}>
-            <a href={tab.href} className={tab.className}>
+            <a href={tab.href} className={`${tab.className} tabText`}>
               {tab.name}
             </a>
           </div>
@@ -22,7 +22,11 @@ class Navbox extends Component {
   }
 
   render() {
-    return <div className={this.props.activeTab}>{this.renderNavTabs()}</div>;
+    return (
+      <div className={`${this.props.activeTab} navContainer`}>
+        {this.renderNavTabs()}
+      </div>
+    );
   }
 }
 

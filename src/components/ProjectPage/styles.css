@@ -4,6 +4,17 @@
   margin: 40px;
   background: rgba(228, 237, 255, 0.77);
   position: fixed;
+  display: flex;
+  -ms-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  height: auto;
+  max-width: 100%;
 }
 
 /* start styling the blurbs */

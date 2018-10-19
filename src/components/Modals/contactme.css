@@ -1,5 +1,6 @@
 .contactMe {
   background: #51689b;
+  color: #fff;
   z-index: 5;
   display: flex;
   align-items: center;
@@ -13,6 +14,29 @@
   overflow-x: hidden;
   margin: 80px;
   transition: background-color 0.3s ease;
+}
+
+input {
+  background: none;
+  border: none;
+  font-size: 21px;
+  outline: none;
+}
+
+.sign-up {
+  display: flex;
+  border-bottom: solid 2px #00b290;
+  padding-bottom: 12px;
+}
+
+.email-input {
+  /*this will tell our input to stretch out and fill the available space*/
+  flex: 1;
+}
+
+.together {
+  font-size: 80px;
+  font-family: "Circular Medium ";
 }
 
 @media (max-width: 400px) {

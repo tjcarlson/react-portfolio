@@ -4,9 +4,20 @@ import "./styles.css";
 {
   /* <Close onClick={this.props.handleClose} /> */
 }
-// how to add in the key of the project that is selected/clicked?
 
 export default class ProjectPage extends Component {
+  renderFooter() {
+    return this.props.projects.map((project, index) => {
+      return (
+        <div className="projectFooter">
+          <div className="previousProject" />
+          <div className="myWorkLink" />
+          <div className="nextProject" />
+        </div>
+      );
+    });
+  }
+
   render() {
     const showHideClassName = this.props.show
       ? "ProjectPage display-block"
@@ -16,7 +27,7 @@ export default class ProjectPage extends Component {
         <div className="Exit">
           <div className="ProjectBody">
             <div className="Blurbs">
-              <div className="ProjectFooter" />
+              <div>{this.renderFooter()}</div>
             </div>
           </div>
         </div>

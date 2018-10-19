@@ -15,7 +15,7 @@ class Home extends Component {
     super(props);
     this.state = {
       show: false,
-      activeTab: "my_work"
+      activeTab: "contact_me"
     };
   }
 
@@ -75,13 +75,13 @@ class Home extends Component {
           click={this.click}
           onClick={this.showProject}
         />
-        /*
+        {/*
         <ProjectPage
           show={this.state.show}
           handleClose={this.hideProject}
           projects={myProjects}
         />
-        */
+        */}
         {this.renderActiveModal()}
       </div>
     );
