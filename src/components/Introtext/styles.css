@@ -11,14 +11,14 @@
 }
 
 @media (max-width: 800px) {
-  .intro h1 {
+  .intro {
     font-size: 18px;
     width: 100%;
   }
 }
 
 @media (max-width: 500px) {
-  .intro h1 {
+  .intro {
     font-size: 16px;
     width: 100%;
   }

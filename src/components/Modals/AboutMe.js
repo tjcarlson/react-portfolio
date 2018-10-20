@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { ReactComponent as Close } from "../assets/close.svg";
 import "./aboutme.css";
 {
   /* <Close onClick={this.props.handleClose} /> */
@@ -13,6 +12,7 @@ export default class AboutMe extends Component {
         About Me
         <div onClick={this.props.closeModal}>
           <svg
+            className="close"
             width="40"
             height="40"
             viewBox="0 0 90 90"

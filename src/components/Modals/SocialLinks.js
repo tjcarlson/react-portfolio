@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { ReactComponent as Close } from "../assets/close.svg";
 import "./sociallinks.css";
 {
   /* <Close onClick={this.props.handleClose} /> */
@@ -13,8 +12,9 @@ export default class SocialLinks extends Component {
         Social Links
         <div onClick={this.props.closeModal}>
           <svg
-            width="80"
-            height="80"
+            className="close"
+            width="40"
+            height="40"
             viewBox="0 0 90 90"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

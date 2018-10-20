@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { ReactComponent as Close } from "../assets/close.svg";
 import "./contactme.css";
 
 // how to add in the key of the project that is selected/clicked?
@@ -32,11 +31,11 @@ export default class ContactMe extends Component {
   render() {
     return (
       <div className="contactMe">
-        Contact Me
         <div onClick={this.props.closeModal}>
           <svg
-            width="80"
-            height="80"
+            className="close"
+            width="40"
+            height="40"
             viewBox="0 0 90 90"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
