@@ -1,0 +1,63 @@
+.contactMe {
+  background: #51689b;
+  color: #fff;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 80px;
+  transition: background-color 0.3s ease;
+}
+
+input {
+  background: none;
+  border: none;
+  font-size: 21px;
+  outline: none;
+  color: #fff;
+}
+
+.sign-up {
+  display: flex;
+  border-bottom: solid 2px #00b290;
+  padding-bottom: 12px;
+}
+
+.email-input {
+  flex: 1;
+}
+
+.textFields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.together {
+  width: 50%;
+  height: auto;
+  font-size: 80px;
+  font-family: "Circular Medium";
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+}
+
+@media (max-width: 450px) {
+  .contactMe {
+    margin: 0px;
+  }
+}

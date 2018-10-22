@@ -2,9 +2,15 @@ body {
   background-image: url("../assets/backgroundGradient.svg");
   background-attachment: fixed;
   background-size: cover;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Circular Regular", sans-serif;
 }
 
 .app_container {
-  padding: 40px;
+  padding: 80px;
+}
+
+@media (max-width: 450px) {
+  .app_container {
+    padding: 32px;
+  }
 }

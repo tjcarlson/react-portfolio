@@ -2,30 +2,30 @@ import React, { Component } from "react";
 import "./styles.css";
 
 class Navbox extends Component {
+  updateActiveTab(e, key) {
+    e.preventDefault();
+    this.props.updateActiveTab(key);
+  }
+
+  renderNavTabs() {
+    return this.props.navTabs.map((tab, index) => {
+      return (
+        <div key={tab.key} onClick={e => this.updateActiveTab(e, tab.key)}>
+          <div id={tab.id}>
+            <a href={tab.href} className={`${tab.className} tabText`}>
+              {tab.name}
+            </a>
+          </div>
+        </div>
+      );
+    });
+  }
+
   render() {
     return (
-      <React.Fragment>
-        <div id="left">
-          <a href="social.html" className="social">
-            Social Links
-          </a>
-        </div>
-        <div id="right">
-          <a href="contact.html" className="contact">
-            Contact Me
-          </a>
-        </div>
-        <div id="top">
-          <a href="home.html" className="work">
-            My Work
-          </a>
-        </div>
-        <div id="bottom">
-          <a href="info.html" className="about">
-            About Me
-          </a>
-        </div>
-      </React.Fragment>
+      <div className={`${this.props.activeTab} navContainer`}>
+        {this.renderNavTabs()}
+      </div>
     );
   }
 }

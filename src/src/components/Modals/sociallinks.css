@@ -1,0 +1,44 @@
+.socialLinks {
+  background-color: #c2b9e9;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 80px;
+  transition: fade-in 0.3s ease;
+}
+
+.block {
+  background: #c2b9e9;
+  color: #fff;
+}
+
+.block h1 {
+  color: #fff;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+}
+
+@media (max-width: 800px) {
+  .block {
+    color: #fff;
+  }
+}
+
+@media (max-width: 450px) {
+  .socialLinks {
+    margin: 0;
+  }
+}

@@ -1,0 +1,53 @@
+.aboutme {
+  background: #f89f83;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 80px;
+  transition: background-color 0.3s ease;
+}
+
+.content {
+  display: grid;
+  grid-auto-rows: 1fr 1fr 1fr;
+  height: 70vh;
+  width: 40vw;
+  padding: 32px;
+  align-items: center;
+  text-align: center;
+  color: #f89f83;
+}
+
+.content div {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 80%;
+  display: flex;
+}
+
+@media (max-width: 450px) {
+  .aboutme {
+    margin: 0;
+  }
+
+  .content {
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+    height: 80vh;
+    width: 80vw;
+    padding: 32px;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    color: #f89f83;
+  }
+}
