@@ -9,7 +9,6 @@ export default class AboutMe extends Component {
   render() {
     return (
       <div className="aboutme">
-        About Me
         <div onClick={this.props.closeModal}>
           <svg
             className="close"
@@ -36,11 +35,17 @@ export default class AboutMe extends Component {
             />
           </svg>
         </div>
-        <div className="blurb1">
-          I'm a product designer in San Francisco....
+        <div className="content">
+          <div className="blurb1">
+            <h3>I'm a product designer in San Francisco....</h3>
+          </div>
+          <div className="blurb2">
+            <h3>View My Resume</h3>
+          </div>
+          <div className="blurb3">
+            <h3>Test</h3>
+          </div>
         </div>
-        <div className="blurb2">View My Resume</div>
-        <div className="blurb3">Test</div>
       </div>
     );
   }

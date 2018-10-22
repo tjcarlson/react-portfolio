@@ -17,6 +17,13 @@
   max-width: 100%;
 }
 
+.exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+}
+
 /* start styling the blurbs */
 .blurbs {
   display: flex;

@@ -21,6 +21,7 @@ input {
   border: none;
   font-size: 21px;
   outline: none;
+  color: #fff;
 }
 
 .sign-up {
@@ -30,8 +31,14 @@ input {
 }
 
 .email-input {
-  /*this will tell our input to stretch out and fill the available space*/
   flex: 1;
+}
+
+.textFields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .together {
@@ -39,6 +46,7 @@ input {
   height: auto;
   font-size: 80px;
   font-family: "Circular Medium";
+  align-items: center;
 }
 
 .close {
@@ -48,7 +56,7 @@ input {
   padding: 16px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .contactMe {
     margin: 0px;
   }

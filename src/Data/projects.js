@@ -16,10 +16,23 @@ export const projects = [
     key: "zelle_activity"
   },
   {
+    title: "Zelle Enrollment",
+    type: "UX",
+    description: "This is a description",
+    image: "#",
+    key: "zelle_enrollment"
+  },
+  {
     title: "Scribd Book Concierge",
     description: "This is a description",
     image: "#",
     key: "scribd_concierge"
+  },
+  {
+    title: "Scribd Mobile Personalization",
+    description: "This is a description",
+    image: "#",
+    key: "scribd_personalization"
   },
   {
     title: "Scribd React Components",

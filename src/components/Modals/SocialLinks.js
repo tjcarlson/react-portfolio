@@ -9,7 +9,6 @@ export default class SocialLinks extends Component {
   render() {
     return (
       <div className="socialLinks">
-        Social Links
         <div onClick={this.props.closeModal}>
           <svg
             className="close"

@@ -28,6 +28,10 @@
   transition: background-color 0.3s ease;
 }
 
+.contact_me a {
+  color: #fff;
+}
+
 .about_me #top,
 .about_me #bottom,
 .about_me #left,
@@ -37,10 +41,6 @@
 }
 
 .about_me a {
-  color: #fff;
-}
-
-.contact_me a {
   color: #fff;
 }
 
@@ -94,7 +94,8 @@
 .contact {
   position: fixed;
   top: 50%;
-  right: 10px;
+  right: 8px;
+  padding-right: 8px;
   transform-origin: 100% 0;
   transform: rotate(90deg) translate(50%, 0);
 }
@@ -120,14 +121,15 @@
   .navContainer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
-    background: red;
+    background: #fff;
     z-index: 50;
     border-top: 1px solid #eee;
     z-index: 500;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /* shoudl this be space around? */
     height: 60px;
   }
 
@@ -137,27 +139,105 @@
   #right {
     bottom: 0;
     position: relative;
-    height: 60px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     width: 25%;
+    background: none;
   }
 
   .tabText {
-    bottom: 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     z-index: 4;
     color: #52689b;
     text-decoration: none;
-    /* position: fixed; */
+    position: relative;
     transition: color 0.1s ease;
     font-family: "Circular Medium";
+    text-align: center;
+    justify-content: center;
   }
 
   .tabText:hover {
     color: #f6d0d0;
     transition: color 0.1s ease;
+  }
+
+  .social_links #top,
+  .social_links #bottom,
+  .social_links #left,
+  .social_links #right {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact_me #top,
+  .contact_me #bottom,
+  .contact_me #left,
+  .contact_me #right {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  .about_me #top,
+  .about_me #bottom,
+  .about_me #left,
+  .about_me #right {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  #left,
+  #right {
+    top: 0;
+    bottom: 0;
+    width: 40px;
+  }
+  #left {
+    left: 0;
+  }
+  #right {
+    right: 0;
+  }
+
+  #top,
+  #bottom {
+    left: 0;
+    right: 0;
+    height: 40px;
+  }
+  #top {
+    top: 0;
+  }
+  #bottom {
+    bottom: 0;
+  }
+
+  .work {
+    width: 25%;
+    text-align: center;
+    padding: 8px;
+  }
+  .contact {
+    text-align: center;
+    transform-origin: none;
+    transform: none;
+    width: 25%;
+    padding: 8px;
+    position: relative;
+  }
+
+  .about {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    padding-bottom: 8px;
+  }
+
+  .social {
+    position: relative;
+    transform-origin: none;
+    transform: none;
   }
 }

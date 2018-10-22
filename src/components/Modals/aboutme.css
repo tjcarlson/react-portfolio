@@ -1,5 +1,5 @@
 .aboutme {
-  background-color: #f89f83;
+  background: #f89f83;
   z-index: 5;
   display: flex;
   align-items: center;
@@ -15,15 +15,39 @@
   transition: background-color 0.3s ease;
 }
 
-.close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 16px;
+.content {
+  display: grid;
+  grid-auto-rows: 1fr 1fr 1fr;
+  height: 70vh;
+  width: 40vw;
+  padding: 32px;
+  align-items: center;
+  text-align: center;
+  color: #f89f83;
 }
 
-@media (max-width: 400px) {
-  .background {
+.content div {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 80%;
+  display: flex;
+}
+
+@media (max-width: 450px) {
+  .aboutme {
     margin: 0;
+  }
+
+  .content {
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+    height: 80vh;
+    width: 80vw;
+    padding: 32px;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    color: #f89f83;
   }
 }

@@ -5,6 +5,8 @@
   background-color: #fff;
   cursor: pointer;
   transition: 0.3s ease-in;
+  display: grid;
+  grid-gap: 2vh;
 }
 
 .projectCards:hover {
@@ -29,17 +31,19 @@
   transition: 0.3s ease-in;
 }
 
-.title h1 {
+.title {
   font-size: 24px;
   text-align: center;
   margin: auto;
   color: #32034d;
+  max-width: 80%;
 }
 
 p {
   font-size: 16px;
   text-align: center;
-  color: #fbe5e0;
+  color: #32034d;
+  opacity: 0.6;
   margin: auto;
 }
 

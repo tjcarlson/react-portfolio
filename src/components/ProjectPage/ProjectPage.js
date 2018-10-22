@@ -23,7 +23,7 @@ export default class ProjectPage extends Component {
       : "ProjectPage display-none";
     return (
       <div id="ProjectWrapper" className={showHideClassName}>
-        <div className="Exit">
+        <div className="exti">
           <svg
             width="60"
             height="60"
