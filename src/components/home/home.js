@@ -15,14 +15,12 @@ class Home extends Component {
     super(props);
     this.state = {
       show: false,
-      activeTab: "contact_me"
+      activeTab: "my_work"
     };
   }
 
-  showProject = () => {
-    this.setState({
-      show: true
-    });
+  showProject = key => {
+    console.log(key);
   };
 
   hideProject = () => {
@@ -70,11 +68,7 @@ class Home extends Component {
           updateActiveTab={this.updateActiveTab}
         />
         <Introtext />
-        <MyWork
-          projects={myProjects}
-          click={this.click}
-          onClick={this.showProject}
-        />
+        <MyWork projects={myProjects} showProject={this.showProject} />
         {/*
         <ProjectPage
           show={this.state.show}

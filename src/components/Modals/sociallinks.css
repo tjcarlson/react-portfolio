@@ -2,7 +2,8 @@
   background-color: #c2b9e9;
   z-index: 5;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
   position: fixed;
   top: 0;
@@ -16,12 +17,14 @@
 }
 
 .block {
-  background: #c2b9e9;
-  color: #fff;
-}
-
-.block h1 {
-  color: #fff;
+  background: #fff;
+  color: #c2b9e9;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  border-radius: 4px;
 }
 
 .close {
@@ -33,12 +36,16 @@
 
 @media (max-width: 800px) {
   .block {
-    color: #fff;
+    color: #c2b9e9;
   }
 }
 
 @media (max-width: 450px) {
   .socialLinks {
     margin: 0;
+  }
+
+  .block {
+    width: 80vw;
   }
 }

@@ -162,6 +162,7 @@
   .tabText:hover {
     color: #f6d0d0;
     transition: color 0.1s ease;
+    background-image: url(../assets/circle.svg);
   }
 
   .social_links #top,
