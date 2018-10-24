@@ -63,11 +63,28 @@ h3 {
     display: grid;
     grid-auto-rows: 1fr 1fr 1fr;
     height: 80vh;
-    width: 80vw;
-    padding: 32px;
+    width: 100vw;
+    padding: 16px;
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
     color: #f89f83;
+  }
+
+  .blurb1 {
+    transform: none;
+  }
+
+  .blurb2 {
+    transform: none;
+  }
+
+  .blurb3 {
+    transform: none;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding: 32px;
   }
 }
