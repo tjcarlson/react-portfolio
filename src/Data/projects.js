@@ -43,7 +43,7 @@ export const projects = [
   {
     title: "Kalita USA",
     description: "This is a description",
-    image: "#",
+    image: "./kalita/mobile_final@2x.png",
     key: "kalita"
   }
 ];

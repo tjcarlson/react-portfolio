@@ -43,7 +43,7 @@ export default class AboutMe extends Component {
             <h3>View My Resume</h3>
           </div>
           <div className="blurb3">
-            <h3>Test</h3>
+            <h3>Want to talk more? Send me an email!</h3>
           </div>
         </div>
       </div>

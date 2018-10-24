@@ -27,11 +27,31 @@
 }
 
 .content div {
-  border: 1px solid #fff;
   border-radius: 4px;
-  background-color: #fff;
-  height: 80%;
+  background: linear-gradient(
+    345.06deg,
+    #ffffff 10.29%,
+    rgba(228, 237, 255, 0.9101) 93.15%
+  );
+
+  height: 90%;
   display: flex;
+}
+
+h3 {
+  color: #f89f83;
+}
+
+.blurb1 {
+  transform: translateX(-40%) rotate(-2deg);
+}
+
+.blurb2 {
+  transform: translateX(20%) rotate(5deg);
+}
+
+.blurb3 {
+  transform: translateX(-10%) rotate(-5deg);
 }
 
 @media (max-width: 450px) {
