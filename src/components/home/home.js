@@ -3,6 +3,7 @@ import Navbox from "../Navbox/navbox";
 import Introtext from "../Introtext/Introtext";
 import MyWork from "../MyWork/MyWork";
 import { projects as myProjects } from "../../Data/projects";
+import { projectData as contentRichProjects } from "../../Data/contentRichPages";
 import { navboxProps } from "../../Data/navigationProps";
 import "./styles.css";
 import AboutMe from "../Modals/AboutMe";
@@ -14,13 +15,19 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false,
+      activeProject: null,
       activeTab: "my_work"
     };
   }
 
   showProject = key => {
-    console.log(key);
+    let activeProject = contentRichProjects.find(project => {
+      return project.key === key;
+    });
+
+    this.setState({
+      activeProject: activeProject
+    });
   };
 
   hideProject = () => {
@@ -59,6 +66,17 @@ class Home extends Component {
     }
   };
 
+  renderActiveProject() {
+    if (!this.state.activeProject) return;
+
+    return (
+      <ProjectPage
+        handleClose={this.hideProject}
+        project={this.state.activeProject}
+      />
+    );
+  }
+
   render() {
     return (
       <div className="app_container">
@@ -69,13 +87,7 @@ class Home extends Component {
         />
         <Introtext />
         <MyWork projects={myProjects} showProject={this.showProject} />
-        {/*
-        <ProjectPage
-          show={this.state.show}
-          handleClose={this.hideProject}
-          projects={myProjects}
-        />
-        */}
+        {this.renderActiveProject()}
         {this.renderActiveModal()}
       </div>
     );

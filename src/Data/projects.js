@@ -1,5 +1,5 @@
 // SET UP TYPE IN MY WORK!!
-
+import zelleBackgroundImage from "./zelleActivity/activity_declined.jpg";
 export const projects = [
   {
     title: "Ventr",
@@ -13,7 +13,8 @@ export const projects = [
     type: "UX",
     description: "This is a description",
     image: "#",
-    key: "zelle_activity"
+    key: "zelle_activity",
+    image: zelleBackgroundImage
   },
   {
     title: "Zelle Enrollment",

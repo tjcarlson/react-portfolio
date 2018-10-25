@@ -35,14 +35,16 @@ export default class SocialLinks extends Component {
             />
           </svg>
         </div>
-        <div className="block instagram">
-          <h1>Instagram (This is the most exciting tbh)</h1>
-        </div>
-        <div className="block linkedin">
-          <h1>linkedin</h1>
-        </div>
-        <div className="block github">
-          <h1>github</h1>
+        <div className="content">
+          <div className="block linkedin">
+            <h3>linkedin</h3>
+          </div>
+          <div className="block instagram">
+            <h3>Instagram (This is the most exciting tbh)</h3>
+          </div>
+          <div className="block github">
+            <h3>github</h3>
+          </div>
         </div>
       </div>
     );

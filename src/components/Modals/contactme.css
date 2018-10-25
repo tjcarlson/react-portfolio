@@ -14,6 +14,10 @@
   overflow-x: hidden;
   margin: 80px;
   transition: background-color 0.3s ease;
+  background-image: url(../assets/blob.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* how to put padding on the background image?*/
 }
 
 input {
@@ -39,14 +43,22 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  height: 80%;
+  width: 40%;
 }
 
+/* how could I put this text on the SVG path??? */
+
 .together {
-  width: 50%;
+  width: auto;
   height: auto;
-  font-size: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  font-size: 44px;
   font-family: "Circular Medium";
-  align-items: center;
+  align-items: left;
 }
 
 .close {

@@ -16,6 +16,7 @@ class MyWork extends Component {
           onClick={e => this.showProject(e, project.key)}
         >
           <div className="overlay">
+            <img src={project.image} />
             <h1 className="title">{project.title}</h1>
             <p className="description">{project.description}</p>
           </div>

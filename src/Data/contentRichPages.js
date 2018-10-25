@@ -1,4 +1,4 @@
-export const projects = [
+export const projectData = [
   {
     key: "ventr",
     title: "Ventr",
