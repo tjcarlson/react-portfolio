@@ -36,10 +36,13 @@
 
   height: 90%;
   display: flex;
+  padding: 16px;
 }
 
-h3 {
-  color: #f89f83;
+.content h3 {
+  color: #32034d;
+  font-family: "Circular Regular";
+  font-size: 24px;
 }
 
 .blurb1 {
@@ -54,6 +57,30 @@ h3 {
   transform: translateX(-10%) rotate(-5deg);
 }
 
+.aboutme a:visited {
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .content h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .content h3 {
+    font-size: 16px;
+  }
+
+  .blurb1 {
+    transform: translateX(-20%) rotate(-2deg);
+  }
+
+  .aboutme {
+    margin: 60px;
+  }
+}
+
 @media (max-width: 450px) {
   .aboutme {
     margin: 0;
@@ -64,11 +91,14 @@ h3 {
     grid-auto-rows: 1fr 1fr 1fr;
     height: 80vh;
     width: 100vw;
-    padding: 16px;
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
     color: #f89f83;
+  }
+
+  .content div {
+    padding: 0;
   }
 
   .blurb1 {
@@ -83,8 +113,8 @@ h3 {
     transform: none;
   }
 
-  h3 {
-    font-size: 20px;
-    padding: 32px;
+  .content h3 {
+    font-size: 18px;
+    width: 90%;
   }
 }

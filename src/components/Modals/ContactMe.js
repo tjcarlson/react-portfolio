@@ -62,36 +62,43 @@ export default class ContactMe extends Component {
             />
           </svg>
         </div>
+
         <div className="textFields">
           <form action="" method="post" className="sign-up">
-            <input
-              placeholder="What's your name?"
-              id="fieldName"
-              name="name"
-              value={this.state.name}
-              required
-              class="name-input"
-              onChange={this.handleChange}
-            />
-            <input
-              placeholder="What's your email?"
-              id="fieldEmail"
-              name="email"
-              type="email"
-              value={this.state.email}
-              required
-              class="email-input"
-              onChange={this.handleChange}
-            />
-            <input
-              placeholder="And your note!"
-              id="fieldNote"
-              name="note"
-              value={this.state.note}
-              required
-              class="note-input"
-              onChange={this.handleChange}
-            />
+            <div className="textFieldOutline">
+              <input
+                placeholder="What's your name?"
+                id="fieldName"
+                name="name"
+                value={this.state.name}
+                required
+                class="name-input"
+                onChange={this.handleChange}
+              />
+            </div>
+            <div className="textFieldOutline">
+              <input
+                placeholder="What's your email?"
+                id="fieldEmail"
+                name="email"
+                type="email"
+                value={this.state.email}
+                required
+                class="email-input"
+                onChange={this.handleChange}
+              />
+            </div>
+            <div className="textFieldOutline">
+              <input
+                placeholder="And your note!"
+                id="fieldNote"
+                name="note"
+                value={this.state.note}
+                required
+                class="note-input"
+                onChange={this.handleChange}
+              />
+            </div>
             <input type="submit" onClick={this.handleSubmit} />
           </form>
         </div>

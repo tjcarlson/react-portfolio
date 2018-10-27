@@ -37,13 +37,25 @@ export default class AboutMe extends Component {
         </div>
         <div className="content">
           <div className="blurb1">
-            <h3>I'm a product designer in San Francisco....</h3>
+            <h3>
+              I spend my free time traveling,{" "}
+              <a href="https://www.instagram.com/carly.son/" target="_blank">
+                taking photos
+              </a>{" "}
+              and rock climbing.
+            </h3>
           </div>
           <div className="blurb2">
-            <h3>View My Resume</h3>
+            <h3>
+              I've spent the past year learning front end development! I love to{" "}
+              <a>prototype</a> and <a>I made this portfolio in react.</a>
+            </h3>
           </div>
           <div className="blurb3">
-            <h3>Want to talk more? Send me an email!</h3>
+            <h3>
+              I try to read a novel every other week. My favorites this year
+              have been Kudos by Rachel Cusk and Sour Heart by Jenny Zhang{" "}
+            </h3>
           </div>
         </div>
       </div>

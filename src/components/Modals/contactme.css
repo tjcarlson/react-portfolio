@@ -3,8 +3,7 @@
   color: #fff;
   z-index: 5;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,10 +13,6 @@
   overflow-x: hidden;
   margin: 80px;
   transition: background-color 0.3s ease;
-  background-image: url(../assets/blob.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  /* how to put padding on the background image?*/
 }
 
 input {
@@ -26,16 +21,7 @@ input {
   font-size: 21px;
   outline: none;
   color: #fff;
-}
-
-.sign-up {
-  display: flex;
-  border-bottom: solid 2px #00b290;
-  padding-bottom: 12px;
-}
-
-.email-input {
-  flex: 1;
+  width: 90%;
 }
 
 .textFields {
@@ -43,22 +29,36 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 80%;
-  width: 40%;
+  width: 50%;
 }
 
-/* how could I put this text on the SVG path??? */
+.textFieldOutline {
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 90%;
+  margin-bottom: 24px;
+}
+
+.textFields input {
+  padding: 8px;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+}
 
 .together {
-  width: auto;
-  height: auto;
-  position: absolute;
+  width: 50%;
   top: 0;
   left: 0;
-  padding: 16px;
+  padding: 32px;
   font-size: 44px;
+  color: white;
   font-family: "Circular Medium";
-  align-items: left;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .close {

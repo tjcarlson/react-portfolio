@@ -39,11 +39,15 @@
 }
 
 .socialLinks h3 {
-  color: #c2b9e9;
+  color: #32034d;
+  font-family: "Circular Regular";
 }
 
 .instagram {
   transform: translateX(-40%) rotate(-2deg);
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
 }
 
 .linkedin {
@@ -61,6 +65,10 @@
   padding: 16px;
 }
 
+.socialLinks a {
+  height: 90%;
+  text-decoration: none;
+}
 @media (max-width: 800px) {
   .block {
     color: #c2b9e9;
@@ -68,7 +76,7 @@
 }
 
 @media (max-width: 450px) {
-  .so {
+  .socialLinks {
     margin: 0;
   }
 
