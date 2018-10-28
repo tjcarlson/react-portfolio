@@ -40,6 +40,7 @@
 
 .socialLinks h3 {
   color: #32034d;
+  opacity: 0.8;
   font-family: "Circular Regular";
 }
 
@@ -68,10 +69,16 @@
 .socialLinks a {
   height: 90%;
   text-decoration: none;
+  color: rgb(50, 3, 77, 0.8);
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .block {
     color: #c2b9e9;
+  }
+  .socialLinks a {
+    height: 60%;
+    text-decoration: none;
+    color: rgb(50, 3, 77, 0.8);
   }
 }
 
@@ -92,8 +99,17 @@
     color: #f89f83;
   }
 
+  .socialLinks a {
+    height: 90%;
+    text-decoration: none;
+    color: rgb(50, 3, 77, 0.8);
+  }
+
   .instagram {
     transform: none;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
   }
 
   .github {
@@ -104,8 +120,9 @@
     transform: none;
   }
 
-  h3 {
+  .content h3 {
     font-size: 20px;
     padding: 32px;
+    width: auto;
   }
 }

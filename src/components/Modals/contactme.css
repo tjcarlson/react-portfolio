@@ -24,6 +24,11 @@ input {
   width: 90%;
 }
 
+input::placeholder {
+  color: white;
+  opacity: 0.8; /* Firefox */
+}
+
 .textFields {
   display: flex;
   flex-direction: column;
@@ -39,8 +44,20 @@ input {
   margin-bottom: 24px;
 }
 
-.textFields input {
-  padding: 8px;
+.note-input {
+  height: 80px;
+}
+
+.textFields input,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  padding: 12px;
+  background-color: transparent;
 }
 
 form {
@@ -68,8 +85,45 @@ form {
   padding: 16px;
 }
 
+/* how to style the submit button? */
+
+.submit input {
+  background-color: white;
+  width: 60%;
+  color: #51689b;
+  border-radius: 20px;
+}
+
+@media (max-width: 850px) {
+  .contactMe {
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .textFields {
+    width: 100%;
+  }
+}
+
 @media (max-width: 450px) {
   .contactMe {
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .together {
+    top: 0;
+    left: 0;
+    padding: 16px 44px 32px 16px;
+    font-size: 32px;
+    color: white;
+    font-family: "Circular Medium";
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+    width: 80%;
   }
 }

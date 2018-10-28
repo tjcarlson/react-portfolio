@@ -41,6 +41,7 @@
 
 .content h3 {
   color: #32034d;
+  opacity: 0.8;
   font-family: "Circular Regular";
   font-size: 24px;
 }
@@ -58,7 +59,8 @@
 }
 
 .aboutme a:visited {
-  color: white;
+  color: #32034d;
+  opacity: 0.8;
 }
 
 @media (max-width: 850px) {

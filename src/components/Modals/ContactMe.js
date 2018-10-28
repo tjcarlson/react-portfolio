@@ -62,7 +62,7 @@ export default class ContactMe extends Component {
             />
           </svg>
         </div>
-
+        <div className="together">Let's make something together!</div>
         <div className="textFields">
           <form action="" method="post" className="sign-up">
             <div className="textFieldOutline">
@@ -99,10 +99,11 @@ export default class ContactMe extends Component {
                 onChange={this.handleChange}
               />
             </div>
-            <input type="submit" onClick={this.handleSubmit} />
+            <div classname="submit">
+              <input type="submit" onClick={this.handleSubmit} />
+            </div>
           </form>
         </div>
-        <div className="together">Let's make something together</div>
       </div>
     );
   }

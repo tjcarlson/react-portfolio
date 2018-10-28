@@ -53,8 +53,8 @@ export default class AboutMe extends Component {
           </div>
           <div className="blurb3">
             <h3>
-              I try to read a novel every other week. My favorites this year
-              have been Kudos by Rachel Cusk and Sour Heart by Jenny Zhang{" "}
+              My favorite recent reads are Kudos by Rachel Cusk and Sour Heart
+              by Jenny Zhang.{" "}
             </h3>
           </div>
         </div>
