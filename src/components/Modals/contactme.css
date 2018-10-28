@@ -103,6 +103,20 @@ form {
   .textFields {
     width: 100%;
   }
+  .together {
+    top: 0;
+    left: 0;
+    padding: 16px 44px 32px 16px;
+    font-size: 32px;
+    color: white;
+    font-family: "Circular Medium";
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+  }
 }
 
 @media (max-width: 450px) {

@@ -78,6 +78,14 @@
     transform: translateX(-20%) rotate(-2deg);
   }
 
+  .blurb2 {
+    transform: translateX(20%) rotate(5deg);
+  }
+
+  .blurb3 {
+    transform: translateX(-10%) rotate(-5deg);
+  }
+
   .aboutme {
     margin: 60px;
   }

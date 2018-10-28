@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import "./sociallinks.css";
-{
-  /* <Close onClick={this.props.handleClose} /> */
-}
-// how to add in the key of the project that is selected/clicked?
 
 export default class SocialLinks extends Component {
   render() {
@@ -36,26 +32,33 @@ export default class SocialLinks extends Component {
           </svg>
         </div>
         <div className="content">
-          <div className="block linkedin">
-            <h3>
-              <a
-                href="https://www.linkedin.com/in/timcarlson245/"
-                target="_blank"
-              >
-                Linkedin
-              </a>
-            </h3>
-          </div>
-          <div className="block instagram">
-            <h3>
-              <a href="https://www.instagram.com/carly.son/" target="_blank">
-                Instagram
-              </a>
-            </h3>
-            <p> (This is the most exciting tbh)</p>
-          </div>
-          <a href="https://github.com/tjcarlson" target="_blank">
-            <div className="block github">
+          <a
+            href="https://www.linkedin.com/in/timcarlson245/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="linkedin">
+              <h3>Linkedin</h3>
+            </div>
+          </a>
+
+          <a
+            href="https://www.instagram.com/carly.son/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="instagram">
+              <h3>Instagram</h3>
+              <p> (This is the most exciting tbh)</p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/tjcarlson"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="github">
               <h3>Github</h3>
             </div>
           </a>

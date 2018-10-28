@@ -4,7 +4,7 @@ export const projectData = [
     title: "Ventr",
     description: "blah blah",
     tools: "",
-    resonsibilities: "",
+    responsibilities: "",
     bannerImage: "#",
     content: [
       {

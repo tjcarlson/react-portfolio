@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import "./aboutme.css";
-{
-  /* <Close onClick={this.props.handleClose} /> */
-}
-// how to add in the key of the project that is selected/clicked?
 
 export default class AboutMe extends Component {
   render() {
@@ -39,7 +35,11 @@ export default class AboutMe extends Component {
           <div className="blurb1">
             <h3>
               I spend my free time traveling,{" "}
-              <a href="https://www.instagram.com/carly.son/" target="_blank">
+              <a
+                href="https://www.instagram.com/carly.son/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 taking photos
               </a>{" "}
               and rock climbing.
@@ -53,7 +53,7 @@ export default class AboutMe extends Component {
           </div>
           <div className="blurb3">
             <h3>
-              My favorite recent reads are Kudos by Rachel Cusk and Sour Heart
+              My favorite recent books are Kudos by Rachel Cusk and Sour Heart
               by Jenny Zhang.{" "}
             </h3>
           </div>

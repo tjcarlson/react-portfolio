@@ -1,5 +1,5 @@
 // SET UP TYPE IN MY WORK!!
-import zelleBackgroundImage from "./zelleActivity/activity_declined.jpg";
+import zelleBackgroundImage from "./zelleActivity/activity_declined@2x.png";
 export const projects = [
   {
     title: "Ventr",

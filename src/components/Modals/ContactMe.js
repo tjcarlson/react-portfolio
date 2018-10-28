@@ -95,11 +95,11 @@ export default class ContactMe extends Component {
                 name="note"
                 value={this.state.note}
                 required
-                class="note-input"
+                className="note-input"
                 onChange={this.handleChange}
               />
             </div>
-            <div classname="submit">
+            <div className="submit">
               <input type="submit" onClick={this.handleSubmit} />
             </div>
           </form>

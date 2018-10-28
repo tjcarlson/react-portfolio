@@ -86,9 +86,11 @@ class Home extends Component {
           updateActiveTab={this.updateActiveTab}
         />
         <Introtext />
-        <MyWork projects={myProjects} showProject={this.showProject} />
-        {this.renderActiveProject()}
-        {this.renderActiveModal()}
+        <div className="wrapper">
+          <MyWork projects={myProjects} showProject={this.showProject} />
+          {this.renderActiveProject()}
+          {this.renderActiveModal()}
+        </div>
       </div>
     );
   }

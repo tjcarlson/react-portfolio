@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import "./styles.css";
-{
-  /* <Close onClick={this.props.handleClose} /> */
-}
 
 export default class ProjectPage extends Component {
   // renderFooter() {
@@ -25,10 +22,11 @@ export default class ProjectPage extends Component {
       : "ProjectPage display-none";
     return (
       <div id="ProjectWrapper" className={showHideClassName}>
-        <div className="exti">
+        <div onClick={this.props.closeModal}>
           <svg
-            width="60"
-            height="60"
+            className="close"
+            width="40"
+            height="40"
             viewBox="0 0 90 90"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -49,9 +47,18 @@ export default class ProjectPage extends Component {
               fillOpacity="1"
             />
           </svg>
-          <div className="ProjectBody">
-            <div className="Blurbs" />
+        </div>
+        <div className="ProjectBody">
+          <div className="intro">
+            <h1 className="title">{this.props.project.title}</h1>
+            <p className="description">{this.props.project.description}</p>
+            <p className="tools">{this.props.project.tools}</p>
+            <p className="responsibilities">
+              {this.props.project.responsibilities}
+            </p>
+            <img src={this.props.project.bannerImage} />
           </div>
+          <div className="Blurbs">Test</div>
         </div>
       </div>
     );

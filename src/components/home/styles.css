@@ -9,6 +9,10 @@ body {
   padding: 80px;
 }
 
+.wrapper {
+  background-color: grey;
+}
+
 @media (max-width: 450px) {
   .app_container {
     padding: 32px;
