@@ -1,4 +1,4 @@
-.ProjectWrapper {
+/*.ProjectWrapper {
   width: 100%;
   height: 100%;
   margin: 80px;
@@ -16,6 +16,36 @@
   flex-direction: row;
   height: auto;
   max-width: 100%;
+}*/
+
+.projectWrapper {
+  background: #fff;
+  color: #51689b;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 80px;
+  transition: background-color 0.3s ease;
+}
+
+.blurbContainer {
+  width: 90%;
+  margin: 16px auto;
+  display: flex;
+  align-items: center;
+}
+
+.reversedBlurbLayout {
+  display: flex;
+  width: 90%;
+  flex-direction: row-reverse;
+  margin: 16px auto;
+  align-items: center;
 }
 
 .exit {
@@ -25,12 +55,25 @@
   padding: 16px;
 }
 
-/* start styling the blurbs */
-.blurbs {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
+.blurbImage {
+  width: 50%;
+  text-align: center;
+}
+
+.blurbText {
+  width: 50%;
+}
+
+.image {
+  max-height: 300px;
+}
+
+.intro {
+  margin: 32px auto;
+}
+
+.intro p {
+  margin: 12px auto;
 }
 
 @media (min-width: 400px) {

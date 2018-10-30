@@ -1,3 +1,13 @@
+import zelle1 from "./zelleActivity/activity_screen@2x.png";
+import zelle2 from "./zelleActivity/user_flow.png";
+import zelle3 from "./zelleActivity/activity_declined@2x.png";
+import zelle4 from "./zelleActivity/activity_declined@2x.png";
+import zelle5 from "./zelleActivity/activity_declined@2x.png";
+import zelle6 from "./zelleActivity/activity_declined@2x.png";
+import zelle7 from "./zelleActivity/activity_declined@2x.png";
+import zelle8 from "./zelleActivity/activity_declined@2x.png";
+import zelle9 from "./zelleActivity/activity_declined@2x.png";
+
 export const projectData = [
   {
     key: "ventr",
@@ -8,7 +18,24 @@ export const projectData = [
     bannerImage: "#",
     content: [
       {
-        imaage: "#",
+        image: "#",
+        title: "test",
+        paragraph: "yes, testing"
+      }
+    ]
+  },
+
+  {
+    key: "onbelay",
+    title: "On Belay",
+    description:
+      "I’m passionate about rock climbing but the process of finding a climbing partner can be difficult.  The popularity of climbing has exploded in the past few years, but the most common way of finding a climbing partner is announcing that you're looking for a partner over the loudspeaker at the gym.  I wanted a better way for climbers to find a partner that works for their skill level and their schedule! My project became On Belay, a simple and intuitive iOS app that focuses on helping climbers find a partner, explore the community at their local gym and take an outdoor trip",
+    Tools: "Sketch, InVision, Lucidchart, Flinto",
+    Responsibilities: "UX, UI, and motion.",
+    bannerImage: "#",
+    content: [
+      {
+        image: "#",
         title: "test",
         paragraph: "yes, testing"
       }
@@ -23,54 +50,54 @@ export const projectData = [
     bannerImage: "#",
     content: [
       {
-        image: "#",
+        image: zelle1,
         title: "Early Ideation",
         paragraph:
           "Early sketches were focused on what information was missing from the first iteration of the activity feed, and what was not communicated well.  I used customer feedback to help drive the design process, with a goal of setting correct expectations for payments and timelines.  We also need to update to accomodate more screen sizes."
       },
       {
-        image: "#",
+        image: zelle2,
         title: "User Journey",
         paragraph:
           "A big part of setting better expectations was mapping out the full user journey for activity.  There were for types of users, Requestors (sending the request), Responders (responding to requst), Sender (sending a payment) and Recepient (reciving a payment), each with their own unique needs."
       },
       {
-        image: "#",
+        image: zelle3,
         title: "Mid Fidelity Wireframer",
         paragraph:
           "I explored a lot of options for presenting a large amount of information on one screen!  My mid fidelity iterations focused on finding a content hierarchy that displayed essential information while not turning into a cluttered list view."
       },
       {
-        image: "#",
+        image: zelle4,
         title: "Final List view",
         paragraph:
           "The list view was split into two categories, pending and completed.  Each cell lets the user know what type of payment it is and if an action is needed!  The amounts are color coded to reflect money entering or leaving."
       },
       {
-        image: "#",
+        image: zelle5,
         title: "Final Detail View",
         paragraph:
           "The user can also move into a detail view from the list view.  This view includes new functionality, such as viewing the other person's token (phone or email they sent money from), viewing details from Zelle about the progress of a payment, and a transaction ID to quickly ID a payment and cut down on customer service call times."
       },
       {
-        image: "#",
+        image: zelle6,
         title: "A Modular Design",
         paragraph:
           "The activity feed was such a large section of the app (over 500 iOS screens) that I created a mini design system for the activity list view and detail view.  The system breaks the design into reusable components that are shared between engineers and designers. "
       },
       {
-        image: "#",
+        image: zelle7,
         title: "Component & Spec Example",
         paragraph:
           "Here you can see an example of one of the components inside of the larger detail view, the chat bubbles.  This screen serves as a guide for front-end engineers to build the bubbles and deal with edge cases.  It includes zeplin spec links for both iOS and Android.  I also wrote the acceptance criteria alongside PM's."
       },
       {
-        image: "#",
+        image: zelle8,
         title: "Metrics",
         paragraph: "yes, it did well"
       },
       {
-        image: "#",
+        image: zelle9,
         title: "Flexible for future business needs",
         paragraph:
           "The design pattern also took into account future business goals for Zelle, including being adaptable to business to consumer disbursements and consumers paying businesses directly through Zelle."

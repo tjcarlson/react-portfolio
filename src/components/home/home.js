@@ -31,7 +31,9 @@ class Home extends Component {
   };
 
   hideProject = () => {
-    this.setState({ show: false });
+    this.setState({
+      activeProject: null
+    });
   };
 
   updateActiveTab = tabKey => {
@@ -87,7 +89,11 @@ class Home extends Component {
         />
         <Introtext />
         <div className="wrapper">
-          <MyWork projects={myProjects} showProject={this.showProject} />
+          <MyWork
+            projects={myProjects}
+            showProject={this.showProject}
+            hideProject={this.hideProject}
+          />
           {this.renderActiveProject()}
           {this.renderActiveModal()}
         </div>
