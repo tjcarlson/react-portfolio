@@ -37,6 +37,9 @@ class Home extends Component {
   };
 
   updateActiveTab = tabKey => {
+    if (tabKey === "my_work") {
+      this.hideProject();
+    }
     this.setState({
       activeTab: tabKey
     });
@@ -62,13 +65,34 @@ class Home extends Component {
     }
   };
 
+  getNextProject = () => {
+    const mappedKeys = myProjects.map((project, index) => {
+      return project.key;
+    });
+    const activeIndex = mappedKeys.indexOf(this.state.activeProject.key);
+
+    if (activeIndex === mappedKeys.length - 1) {
+      return myProjects[0];
+    }
+
+    return myProjects[activeIndex + 1];
+  };
+
+  // pass in key from get next project into showproject
+
+  getPreviousProject = () => {
+    return null;
+  };
+
   renderActiveProject() {
     if (!this.state.activeProject) return;
 
     return (
       <ProjectPage
-        handleClose={this.hideProject}
+        hideProject={this.hideProject}
         project={this.state.activeProject}
+        nextProject={this.getNextProject()}
+        previousProject={this.getPreviousProject()}
       />
     );
   }
@@ -83,11 +107,7 @@ class Home extends Component {
         />
         <Introtext />
         <div className="wrapper">
-          <MyWork
-            projects={myProjects}
-            showProject={this.showProject}
-            hideProject={this.hideProject}
-          />
+          <MyWork projects={myProjects} showProject={this.showProject} />
           {this.renderActiveProject()}
           {this.renderActiveModal()}
         </div>

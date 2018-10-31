@@ -24,7 +24,7 @@ export default class ProjectPage extends Component {
 
   renderClose() {
     return (
-      <div onClick={this.props.closeModal}>
+      <div onClick={this.props.hideProject}>
         <svg
           className="exit"
           width="40"
