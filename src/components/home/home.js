@@ -42,12 +42,6 @@ class Home extends Component {
     });
   };
 
-  updateTitleState = newTitle => {
-    this.setState({
-      title: newTitle
-    });
-  };
-
   closeModal = () => {
     this.setState({
       activeTab: "my_work"

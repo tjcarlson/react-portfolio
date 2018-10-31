@@ -49,10 +49,10 @@
 }
 
 .exit {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  padding: 16px;
+  padding: 96px;
 }
 
 .blurbImage {
@@ -62,23 +62,58 @@
 
 .blurbText {
   width: 50%;
+  text-align: left;
 }
 
 .image {
-  max-height: 300px;
+  max-height: 350px;
 }
 
-.intro {
+.introSection {
   margin: 32px auto;
 }
 
-.intro p {
+.introSection h1 {
   margin: 12px auto;
 }
 
-@media (min-width: 400px) {
-  .ProjectWrapper {
+.introSection p {
+  margin: 12px auto;
+  opacity: 0.9;
+}
+
+.bannerImage {
+  width: 90%;
+  margin: 32px auto;
+}
+
+@media (max-width: 850px) {
+  .projectWrapper {
+    margin: 60px;
+  }
+
+  .bannerImage {
+    width: 90%;
+    margin: 16px auto;
+  }
+
+  .exit {
+    padding: 76px;
+  }
+}
+
+@media (max-width: 450px) {
+  .projectWrapper {
     margin: 0;
+  }
+
+  .bannerImage {
+    width: 90%;
+    margin: 16px auto;
+  }
+
+  .exit {
+    padding: 16px;
   }
 }
 

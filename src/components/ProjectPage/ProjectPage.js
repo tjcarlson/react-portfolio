@@ -4,7 +4,7 @@ import "./styles.css";
 export default class ProjectPage extends Component {
   renderIntro() {
     return (
-      <div className="intro">
+      <div className="introSection">
         <h1 className="title">{this.props.project.title}</h1>
         <p className="description">
           <b>What and why: </b> {this.props.project.description}
@@ -17,7 +17,7 @@ export default class ProjectPage extends Component {
           <b>Responsibilities: </b>
           {this.props.project.responsibilities}
         </p>
-        <img src={this.props.project.bannerImage} />
+        <img src={this.props.project.bannerImage} className="bannerImage" />
       </div>
     );
   }
@@ -26,7 +26,7 @@ export default class ProjectPage extends Component {
     return (
       <div onClick={this.props.closeModal}>
         <svg
-          className="close"
+          className="exit"
           width="40"
           height="40"
           viewBox="0 0 90 90"
@@ -38,7 +38,7 @@ export default class ProjectPage extends Component {
             cy="45"
             r="42.5"
             fill="#none"
-            stroke="#FFF"
+            stroke="#e0aaff"
             strokeWidth="5"
           />
           <path
@@ -78,7 +78,8 @@ export default class ProjectPage extends Component {
   render() {
     return (
       <div className="projectWrapper">
-        {this.props.hideProject()}
+        {this.props.hideProject}
+        {this.renderClose()}
         <div className="projectBody">
           {this.renderIntro()}
           <div className="blurbs">{this.renderBlurbs()}</div>

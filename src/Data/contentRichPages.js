@@ -1,3 +1,4 @@
+import zelleSplash from "./zelleActivity/splash.png";
 import zelle1 from "./zelleActivity/activity_screen@2x.png";
 import zelle2 from "./zelleActivity/user_flow.png";
 import zelle3 from "./zelleActivity/activity_declined@2x.png";
@@ -12,9 +13,10 @@ export const projectData = [
   {
     key: "ventr",
     title: "Ventr",
-    description: "blah blah",
-    tools: "",
-    responsibilities: "",
+    description:
+      "Ventr is a side project with Travis Crampton, all built in react native! Ventr is a way for folks who bike tour (extended bike camping trips) document, share and discover journies.",
+    tools: "Figma & Framer",
+    responsibilities: "UX, UI & Motion",
     bannerImage: "#",
     content: [
       {
@@ -47,7 +49,7 @@ export const projectData = [
     description: "This is a description",
     tools: "UX",
     responsibilities: "UX, UI (paired with another UI designer & motion",
-    bannerImage: "#",
+    bannerImage: zelleSplash,
     content: [
       {
         image: zelle1,
@@ -105,11 +107,45 @@ export const projectData = [
     ]
   },
   {
-    title: "Zelle Enrollment",
-    type: "UX",
-    description: "This is a description",
-    image: "#",
-    key: "zelle_enrollment"
+    key: "portfolio",
+    title: "This portfolio!",
+    description:
+      "Is this too meta? Hear me out! I put this site on here becuase it represents me learning front end development and trying to bridge the gap between development and design.",
+    tools: "React, css, Figma, ",
+    resonsibilities: "Development & Design :)",
+    image: "../ass",
+    content: [
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      }
+    ]
   },
   {
     title: "Scribd Book Concierge",
@@ -124,10 +160,44 @@ export const projectData = [
     key: "scribd_personalization"
   },
   {
-    title: "Scribd React Components",
-    description: "This is a description",
-    image: "#",
-    key: "scribd_react"
+    key: "prototypes",
+    title: "Prototypes",
+    description: "This past year I've been learning front end develepment to ",
+    tools: "Framer Studio, Framer X, html/css/js",
+    resonsibilities: "UX, UI & Illustrations",
+    image: "../ass",
+    content: [
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      }
+    ]
   },
   {
     key: "kalita",
