@@ -123,34 +123,33 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #fff;
+    background: blue;
     z-index: 50;
-    border-top: 1px solid #eee;
-    z-index: 500;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* shoudl this be space around? */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    text-align: center;
     height: 60px;
   }
+
+  /* CONTACT ME TEXT IS NOT CENTERED!! */
 
   #top,
   #bottom,
   #left,
   #right {
-    bottom: 0;
     position: relative;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    width: 25%;
-    background: none;
+    width: 50%;
+    background-color: transparent;
+    margin: auto;
   }
 
   .tabText {
     font-size: 16px;
     font-weight: 500;
     z-index: 4;
-    color: #52689b;
+    color: #95529b;
     text-decoration: none;
     position: relative;
     transition: color 0.1s ease;
@@ -169,7 +168,7 @@
   .social_links #bottom,
   .social_links #left,
   .social_links #right {
-    background-color: #fff;
+    background-color: transparent;
     transition: background-color 0.3s ease;
   }
 
@@ -177,7 +176,7 @@
   .contact_me #bottom,
   .contact_me #left,
   .contact_me #right {
-    background-color: #fff;
+    background-color: transparent;
     transition: background-color 0.3s ease;
   }
 
@@ -185,60 +184,22 @@
   .about_me #bottom,
   .about_me #left,
   .about_me #right {
-    background-color: #fff;
+    background-color: transparent;
     transition: background-color 0.3s ease;
   }
 
-  #left,
-  #right {
-    top: 0;
-    bottom: 0;
-    width: 40px;
-  }
-  #left {
-    left: 0;
-  }
-  #right {
-    right: 0;
-  }
-
-  #top,
-  #bottom {
-    left: 0;
-    right: 0;
-    height: 40px;
-  }
-  #top {
-    top: 0;
-  }
-  #bottom {
-    bottom: 0;
-  }
-
-  .work {
-    width: 25%;
-    text-align: center;
-    padding: 8px;
-  }
-  .contact {
+  .work .contact .about .social {
     text-align: center;
     transform-origin: none;
     transform: none;
-    width: 25%;
-    padding: 8px;
-    position: relative;
-  }
-
-  .about {
-    width: 100%;
-    text-align: center;
-    bottom: 0;
-    padding-bottom: 8px;
   }
 
   .social {
-    position: relative;
-    transform-origin: none;
-    transform: none;
+    left: 0;
+  }
+
+  .contact {
+    right: 0;
+    padding-right: 0;
   }
 }

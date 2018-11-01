@@ -26,7 +26,7 @@ class MyWork extends Component {
   }
 
   render() {
-    return <div>{this.renderProjects()}</div>;
+    return <div className="projectWrapperTest">{this.renderProjects()}</div>;
   }
 }
 
