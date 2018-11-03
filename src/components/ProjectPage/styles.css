@@ -74,6 +74,7 @@
 .introSection {
   text-align: center;
   margin: 32px auto;
+  max-width: 90%;
 }
 
 .introSection h1 {
@@ -92,6 +93,18 @@
 
 .backToHome {
   margin: 16px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer div {
+  outline: 2px solid #51689b;
+  padding: 32px;
+  margin: 32px;
+  text-align: center;
 }
 
 @media (max-width: 850px) {

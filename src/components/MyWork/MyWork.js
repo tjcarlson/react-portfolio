@@ -15,7 +15,9 @@ class MyWork extends Component {
           className="projectCards"
           style={{
             backgroundImage: `url(${project.image})`,
-            backgroundSize: "100%"
+            backgroundSize: "auto 100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center"
           }} //background image sizing
           onClick={e => this.showProject(e, project.key)}
         >

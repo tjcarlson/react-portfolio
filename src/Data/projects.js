@@ -1,11 +1,12 @@
 // SET UP TYPE IN MY WORK!!
-import zelleBackgroundImage from "./zelleActivity/activity_declined@2x.png";
+import ventrBackgroundImage from "./ventr/ventrSplash.png";
+import zelleBackgroundImage from "./zelleActivity/splash.png";
 export const projects = [
   {
     title: "Ventr",
     type: "Product Design, Motion & Brand",
     description: "blah blah",
-    image: "#",
+    image: ventrBackgroundImage,
     key: "ventr"
   },
   {

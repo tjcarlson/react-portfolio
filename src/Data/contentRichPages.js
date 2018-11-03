@@ -1,3 +1,9 @@
+import ventrSplash from "./ventr/ventrSplash.png";
+import ventr1 from "./ventr/ventr1.png";
+import ventr2 from "./ventr/ventr2.png";
+import ventr3 from "./ventr/ventr3.png";
+import ventr4 from "./ventr/ventr4.png";
+
 import zelleSplash from "./zelleActivity/splash.png";
 import zelle1 from "./zelleActivity/activity_screen@2x.png";
 import zelle2 from "./zelleActivity/user_flow.png";
@@ -17,12 +23,37 @@ export const projectData = [
       "Ventr is a side project with Travis Crampton, all built in react native! Ventr is a way for folks who bike tour (extended bike camping trips) document, share and discover journies.",
     tools: "Figma & Framer",
     responsibilities: "UX, UI & Motion",
-    bannerImage: "#",
+    bannerImage: ventrSplash,
     content: [
       {
-        image: "#",
+        image: ventr1,
+        title: "The Onboarding Flow",
+        paragraph:
+          "The goal of the onboarding sequence was to keep it as short as possible so the user can get into the app, while also reducing cognitive load by isolating 1-2 tasks per screen."
+      },
+      {
+        image: ventr2,
+        title: "Profile Tab",
+        paragraph:
+          "Profile tabs may be the least flashy part of most apps but the UX is important.  We used new material style forms so users always have a title on the form field."
+      },
+      {
+        image: ventr3,
+        title: "Create a New Trip",
+        paragraph:
+          "The fab on the home menu screen lets the user create a trip or add onto an existing trip.  The goal was to only ask for the essential information and guide the user into adding chapter (sections) into their trip."
+      },
+      {
+        image: ventr4,
+        title: "My Trips & Trip Detail Screen",
+        paragraph:
+          "Bikers can browse past, current and upcoming trips on their My Trips tab.  On the Trip page, Chapters are show in chronological order with a few key snippets of information, the date, trip length and reading stats."
+      },
+      {
+        image: ventrSplash,
         title: "test",
-        paragraph: "yes, testing"
+        paragraph:
+          "Ventr is all built in react native and launching late 2018.  We learned a lot from the MVP and will be continuing to update and improve the product!"
       }
     ]
   },
