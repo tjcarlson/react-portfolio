@@ -6,9 +6,6 @@ export default class ProjectPage extends Component {
     return (
       <div className="introSection">
         <h1 className="title">{this.props.project.title}</h1>
-        <p className="description">
-          <b>What and why: </b> {this.props.project.description}
-        </p>
         <p className="tools">
           <b>Tools: </b>
           {this.props.project.tools}
@@ -17,6 +14,10 @@ export default class ProjectPage extends Component {
           <b>Responsibilities: </b>
           {this.props.project.responsibilities}
         </p>
+        <p className="description">
+          <b>What and why: </b> {this.props.project.description}
+        </p>
+
         <img src={this.props.project.bannerImage} className="bannerImage" />
       </div>
     );
@@ -86,16 +87,25 @@ export default class ProjectPage extends Component {
           onClick={() => this.switchProject(this.props.previousProject.key)}
           className="previousProject"
         >
-          {this.props.previousProject.title}
+          <h4>
+            <b>Previous Project</b>{" "}
+          </h4>
+          <h4> {this.props.previousProject.title}</h4>
         </div>
+
         <div onClick={this.props.hideProject} className="backToHome">
-          Back to Home
+          <h4>
+            <b>Back to Home</b>
+          </h4>
         </div>
         <div
           onClick={() => this.switchProject(this.props.nextProject.key)}
           className="nextProject"
         >
-          {this.props.nextProject.title}
+          <h4>
+            <b>Next Project</b>{" "}
+          </h4>
+          <h4> {this.props.nextProject.title}</h4>
         </div>
       </div>
     );

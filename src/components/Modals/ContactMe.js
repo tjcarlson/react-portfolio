@@ -1,38 +1,7 @@
 import React, { Component } from "react";
 import "./contactme.css";
 
-// how to add in the key of the project that is selected/clicked?
-
 export default class ContactMe extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      note: ""
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    let fieldName = event.target.name;
-    let value = event.target.value;
-
-    this.setState({ [fieldName]: value });
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
-    // use formdata to populate entire form that will be sent off in an email.
-    console.log(this.state);
-    this.setState({
-      name: "",
-      email: "",
-      note: ""
-    });
-  }
-
   render() {
     return (
       <div className="contactMe">
@@ -63,47 +32,7 @@ export default class ContactMe extends Component {
           </svg>
         </div>
         <div className="together">Let's make something together!</div>
-        <div className="textFields">
-          <form action="" method="post" className="sign-up">
-            <div className="textFieldOutline">
-              <input
-                placeholder="What's your name?"
-                id="fieldName"
-                name="name"
-                value={this.state.name}
-                required
-                class="name-input"
-                onChange={this.handleChange}
-              />
-            </div>
-            <div className="textFieldOutline">
-              <input
-                placeholder="What's your email?"
-                id="fieldEmail"
-                name="email"
-                type="email"
-                value={this.state.email}
-                required
-                class="email-input"
-                onChange={this.handleChange}
-              />
-            </div>
-            <div className="textFieldOutline">
-              <input
-                placeholder="And your note!"
-                id="fieldNote"
-                name="note"
-                value={this.state.note}
-                required
-                className="note-input"
-                onChange={this.handleChange}
-              />
-            </div>
-            <div className="submit">
-              <input type="submit" onClick={this.handleSubmit} />
-            </div>
-          </form>
-        </div>
+        <div className="myEmail" />
       </div>
     );
   }

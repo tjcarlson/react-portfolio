@@ -51,7 +51,7 @@ export const projectData = [
       },
       {
         image: ventrSplash,
-        title: "test",
+        title: null,
         paragraph:
           "Ventr is all built in react native and launching late 2018.  We learned a lot from the MVP and will be continuing to update and improve the product!"
       }
