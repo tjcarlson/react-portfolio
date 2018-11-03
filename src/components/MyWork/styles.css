@@ -48,16 +48,12 @@ p {
   margin: auto;
 }
 
-/*
-
-THIS BROKE ALL LAYOUTS ON MOBILE
-
 .projectWrapperTest {
   margin-top: 64px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-}*/
+}
 
 /* edit stuff below to put CSS grid onto site!!!
 

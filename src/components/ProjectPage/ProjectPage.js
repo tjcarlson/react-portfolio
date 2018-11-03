@@ -57,7 +57,7 @@ export default class ProjectPage extends Component {
     let reversedClass = index % 2 === 0 ? "reversedBlurbLayout" : "";
 
     return (
-      <div className={`blurb_container ${reversedClass}`}>
+      <div className={`blurbContainer ${reversedClass}`}>
         <div className="blurbImage">
           <img className="image" src={blurb.image} />
         </div>
@@ -69,10 +69,36 @@ export default class ProjectPage extends Component {
     );
   }
 
+  switchProject = key => {
+    this.props.switchProject(key);
+  };
+
   renderBlurbs() {
     return this.props.project.content.map((blurb, index) => {
       return this.renderBlurb(blurb, index);
     });
+  }
+
+  renderFooter() {
+    return (
+      <div className="footer">
+        <div
+          onClick={() => this.switchProject(this.props.previousProject.key)}
+          className="previousProject"
+        >
+          {this.props.previousProject.title}
+        </div>
+        <div onClick={this.props.hideProject} className="backToHome">
+          Back to Home
+        </div>
+        <div
+          onClick={() => this.switchProject(this.props.nextProject.key)}
+          className="nextProject"
+        >
+          {this.props.nextProject.title}
+        </div>
+      </div>
+    );
   }
 
   render() {
@@ -84,6 +110,7 @@ export default class ProjectPage extends Component {
           {this.renderIntro()}
           <div className="blurbs">{this.renderBlurbs()}</div>
         </div>
+        {this.renderFooter()}
       </div>
     );
   }

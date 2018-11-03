@@ -13,7 +13,10 @@ class MyWork extends Component {
         <div
           key={project.key}
           className="projectCards"
-          style={{ backgroundImage: `url(${project.image})` }} //background image sizing
+          style={{
+            backgroundImage: `url(${project.image})`,
+            backgroundSize: "100%"
+          }} //background image sizing
           onClick={e => this.showProject(e, project.key)}
         >
           <div className="overlay">

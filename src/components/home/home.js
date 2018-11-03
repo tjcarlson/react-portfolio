@@ -65,10 +65,7 @@ class Home extends Component {
     }
   };
 
-  getNextProject = () => {
-    const mappedKeys = myProjects.map((project, index) => {
-      return project.key;
-    });
+  getNextProject = mappedKeys => {
     const activeIndex = mappedKeys.indexOf(this.state.activeProject.key);
 
     if (activeIndex === mappedKeys.length - 1) {
@@ -80,19 +77,31 @@ class Home extends Component {
 
   // pass in key from get next project into showproject
 
-  getPreviousProject = () => {
-    return null;
+  getPreviousProject = mappedKeys => {
+    const activeIndex = mappedKeys.indexOf(this.state.activeProject.key);
+
+    if (activeIndex === 0) {
+      return myProjects[mappedKeys.length - 1];
+    }
+
+    return myProjects[activeIndex - 1];
   };
 
   renderActiveProject() {
     if (!this.state.activeProject) return;
+    const mappedKeys = myProjects.map((project, index) => {
+      return project.key;
+    });
+    let previousProject = this.getPreviousProject(mappedKeys);
+    let nextProject = this.getNextProject(mappedKeys);
 
     return (
       <ProjectPage
         hideProject={this.hideProject}
         project={this.state.activeProject}
-        nextProject={this.getNextProject()}
-        previousProject={this.getPreviousProject()}
+        nextProject={nextProject}
+        previousProject={previousProject}
+        switchProject={this.showProject}
       />
     );
   }
