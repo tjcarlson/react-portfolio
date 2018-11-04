@@ -3,6 +3,7 @@ import ventr1 from "./ventr/ventr1.png";
 import ventr2 from "./ventr/ventr2.png";
 import ventr3 from "./ventr/ventr3.png";
 import ventr4 from "./ventr/ventr4.png";
+import ventr5 from "./ventr/ventr5.png";
 
 import zelleSplash from "./zelleActivity/splash.png";
 import zelle1 from "./zelleActivity/activity_screen@2x.png";
@@ -14,6 +15,13 @@ import zelle6 from "./zelleActivity/activity_declined@2x.png";
 import zelle7 from "./zelleActivity/activity_declined@2x.png";
 import zelle8 from "./zelleActivity/activity_declined@2x.png";
 import zelle9 from "./zelleActivity/activity_declined@2x.png";
+
+import onBelaySplash from "./onBelay/onBelaySplash.png";
+import onBelay1 from "./onBelay/onBelay1.png";
+import onBelay2 from "./onBelay/onBelay2.png";
+import onBelay3 from "./onBelay/onBelay3.png";
+import onBelay4 from "./onBelay/onBelay4.png";
+import onBelay5 from "./onBelay/onBelay5.png";
 
 export const projectData = [
   {
@@ -50,27 +58,10 @@ export const projectData = [
           "Bikers can browse past, current and upcoming trips on their My Trips tab.  On the Trip page, Chapters are show in chronological order with a few key snippets of information, the date, trip length and reading stats."
       },
       {
-        image: ventrSplash,
-        title: null,
+        image: ventr5,
+        title: "The First Iteration",
         paragraph:
           "Ventr is all built in react native and launching late 2018.  We learned a lot from the MVP and will be continuing to update and improve the product!"
-      }
-    ]
-  },
-
-  {
-    key: "onbelay",
-    title: "On Belay",
-    description:
-      "I’m passionate about rock climbing but the process of finding a climbing partner can be difficult.  The popularity of climbing has exploded in the past few years, but the most common way of finding a climbing partner is announcing that you're looking for a partner over the loudspeaker at the gym.  I wanted a better way for climbers to find a partner that works for their skill level and their schedule! My project became On Belay, a simple and intuitive iOS app that focuses on helping climbers find a partner, explore the community at their local gym and take an outdoor trip",
-    Tools: "Sketch, InVision, Lucidchart, Flinto",
-    Responsibilities: "UX, UI, and motion.",
-    bannerImage: "#",
-    content: [
-      {
-        image: "#",
-        title: "test",
-        paragraph: "yes, testing"
       }
     ]
   },
@@ -280,6 +271,42 @@ export const projectData = [
         title: "Metrics",
         paragraph:
           "The site was profitable within the first month!  We met our internal goal of explaining the value of our high end Tsubame line, leading to a 125% increase in sales of these products."
+      },
+      {
+        key: "onbelay",
+        title: "On Belay",
+        description:
+          "I’m passionate about rock climbing but the process of finding a climbing partner can be difficult.  The popularity of climbing has exploded in the past few years, but the most common way of finding a climbing partner is announcing that you're looking for a partner over the loudspeaker at the gym.  I wanted a better way for climbers to find a partner that works for their skill level and their schedule! My project became On Belay, a simple and intuitive iOS app that focuses on helping climbers find a partner, explore the community at their local gym and take an outdoor trip",
+        Tools: "Sketch, InVision, Lucidchart, Flinto",
+        Responsibilities: "UX, UI, and motion.",
+        bannerImage: onBelaySplash,
+        content: [
+          {
+            image: onBelay1,
+            title: "test",
+            paragraph: "yes, testing"
+          },
+          {
+            image: onBelay2,
+            title: "test",
+            paragraph: "yes, testing"
+          },
+          {
+            image: onBelay3,
+            title: "test",
+            paragraph: "yes, testing"
+          },
+          {
+            image: onBelay4,
+            title: "test",
+            paragraph: "yes, testing"
+          },
+          {
+            image: onBelay5,
+            title: "test",
+            paragraph: "yes, testing"
+          }
+        ]
       }
     ]
   }
