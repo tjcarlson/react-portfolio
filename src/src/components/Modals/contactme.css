@@ -1,10 +1,10 @@
 .contactMe {
   background: #51689b;
+  background-image: url("../assets/blob2.svg");
   color: #fff;
   z-index: 5;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,37 +16,17 @@
   transition: background-color 0.3s ease;
 }
 
-input {
-  background: none;
-  border: none;
-  font-size: 21px;
-  outline: none;
-  color: #fff;
-}
-
-.sign-up {
-  display: flex;
-  border-bottom: solid 2px #00b290;
-  padding-bottom: 12px;
-}
-
-.email-input {
-  flex: 1;
-}
-
-.textFields {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 .together {
   width: 50%;
-  height: auto;
-  font-size: 80px;
+  top: 0;
+  left: 0;
+  padding: 32px;
+  font-size: 44px;
+  color: white;
   font-family: "Circular Medium";
+  display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .close {
@@ -56,8 +36,49 @@ input {
   padding: 16px;
 }
 
+@media (max-width: 850px) {
+  .contactMe {
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .together {
+    top: 0;
+    left: 0;
+    padding: 16px 44px 32px 16px;
+    font-size: 32px;
+    color: white;
+    font-family: "Circular Medium";
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+  }
+}
+
 @media (max-width: 450px) {
   .contactMe {
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .together {
+    top: 0;
+    left: 0;
+    padding: 16px 44px 32px 16px;
+    font-size: 32px;
+    color: white;
+    font-family: "Circular Medium";
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+    margin-left: 16px;
   }
 }

@@ -1,5 +1,5 @@
 .socialLinks {
-  background-color: #c2b9e9;
+  background: #c2b9e9;
   z-index: 5;
   display: flex;
   align-items: center;
@@ -12,16 +12,52 @@
   overflow-y: auto;
   overflow-x: hidden;
   margin: 80px;
-  transition: fade-in 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.block {
-  background: #c2b9e9;
-  color: #fff;
+.content {
+  display: grid;
+  grid-auto-rows: 1fr 1fr 1fr;
+  height: 70vh;
+  width: 30vw;
+  padding: 32px;
+  align-items: center;
+  text-align: center;
+  color: #c2b9e9;
 }
 
-.block h1 {
-  color: #fff;
+.content div {
+  border-radius: 12px;
+  background: linear-gradient(
+    345.06deg,
+    #ffffff 10.29%,
+    rgba(228, 237, 255, 0.9101) 93.15%
+  );
+
+  height: 90%;
+  display: flex;
+}
+
+.socialLinks h3 {
+  color: #32034d;
+  opacity: 0.8;
+  font-family: "Circular Regular";
+  font-size: 44px;
+}
+
+.instagram {
+  transform: translateX(-40%) rotate(-2deg);
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.linkedin {
+  transform: translateX(20%) rotate(5deg);
+}
+
+.github {
+  transform: translateX(-5%) rotate(4deg);
 }
 
 .close {
@@ -31,14 +67,68 @@
   padding: 16px;
 }
 
-@media (max-width: 800px) {
-  .block {
-    color: #fff;
+.socialLinks a {
+  height: 80%;
+  text-decoration: none;
+  color: rgb(50, 3, 77, 0.8);
+}
+@media (max-width: 850px) {
+  .socialLinks a {
+    height: 60%;
+    text-decoration: none;
+    color: rgb(50, 3, 77, 0.8);
+  }
+
+  .linkedin {
+    transform: translateX(3%) rotate(5deg);
   }
 }
 
 @media (max-width: 450px) {
   .socialLinks {
     margin: 0;
+  }
+
+  .content {
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+    height: 80vh;
+    width: 100vw;
+    padding: 16px;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    color: #f89f83;
+  }
+
+  .socialLinks a {
+    height: 100%;
+    text-decoration: none;
+    color: rgb(50, 3, 77, 0.8);
+  }
+  .socialLinks h3 {
+    font-size: 20px;
+    padding: 32px;
+    width: auto;
+    font-size: 32px;
+  }
+
+  .instagram {
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  .instagram p {
+    margin-bottom: 40px;
+  }
+
+  .github {
+    transform: none;
+  }
+
+  .linkedin {
+    transform: none;
   }
 }

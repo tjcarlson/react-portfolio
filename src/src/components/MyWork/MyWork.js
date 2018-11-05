@@ -2,10 +2,25 @@ import React, { Component } from "react";
 import "./styles.css";
 
 class MyWork extends Component {
+  showProject = (e, key) => {
+    e.preventDefault();
+    this.props.showProject(key);
+  };
+
   renderProjects() {
     return this.props.projects.map((project, index) => {
       return (
-        <div className="projectCards">
+        <div
+          key={project.key}
+          className="projectCards"
+          style={{
+            backgroundImage: `url(${project.image})`,
+            backgroundSize: "auto 100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center"
+          }} //background image sizing
+          onClick={e => this.showProject(e, project.key)}
+        >
           <div className="overlay">
             <h1 className="title">{project.title}</h1>
             <p className="description">{project.description}</p>
@@ -16,7 +31,7 @@ class MyWork extends Component {
   }
 
   render() {
-    return <div>{this.renderProjects()}</div>;
+    return <div className="projectWrapperTest">{this.renderProjects()}</div>;
   }
 }
 

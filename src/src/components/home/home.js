@@ -3,6 +3,7 @@ import Navbox from "../Navbox/navbox";
 import Introtext from "../Introtext/Introtext";
 import MyWork from "../MyWork/MyWork";
 import { projects as myProjects } from "../../Data/projects";
+import { projectData as contentRichProjects } from "../../Data/contentRichPages";
 import { navboxProps } from "../../Data/navigationProps";
 import "./styles.css";
 import AboutMe from "../Modals/AboutMe";
@@ -14,30 +15,33 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false,
-      activeTab: "contact_me"
+      activeProject: null,
+      activeTab: "my_work"
     };
   }
 
-  showProject = () => {
+  showProject = key => {
+    let activeProject = contentRichProjects.find(project => {
+      return project.key === key;
+    });
+
     this.setState({
-      show: true
+      activeProject: activeProject
     });
   };
 
   hideProject = () => {
-    this.setState({ show: false });
-  };
-
-  updateActiveTab = tabKey => {
     this.setState({
-      activeTab: tabKey
+      activeProject: null
     });
   };
 
-  updateTitleState = newTitle => {
+  updateActiveTab = tabKey => {
+    if (tabKey === "my_work") {
+      this.hideProject();
+    }
     this.setState({
-      title: newTitle
+      activeTab: tabKey
     });
   };
 
@@ -61,6 +65,47 @@ class Home extends Component {
     }
   };
 
+  getNextProject = mappedKeys => {
+    const activeIndex = mappedKeys.indexOf(this.state.activeProject.key);
+
+    if (activeIndex === mappedKeys.length - 1) {
+      return myProjects[0];
+    }
+
+    return myProjects[activeIndex + 1];
+  };
+
+  // pass in key from get next project into showproject
+
+  getPreviousProject = mappedKeys => {
+    const activeIndex = mappedKeys.indexOf(this.state.activeProject.key);
+
+    if (activeIndex === 0) {
+      return myProjects[mappedKeys.length - 1];
+    }
+
+    return myProjects[activeIndex - 1];
+  };
+
+  renderActiveProject() {
+    if (!this.state.activeProject) return;
+    const mappedKeys = myProjects.map((project, index) => {
+      return project.key;
+    });
+    let previousProject = this.getPreviousProject(mappedKeys);
+    let nextProject = this.getNextProject(mappedKeys);
+
+    return (
+      <ProjectPage
+        hideProject={this.hideProject}
+        project={this.state.activeProject}
+        nextProject={nextProject}
+        previousProject={previousProject}
+        switchProject={this.showProject}
+      />
+    );
+  }
+
   render() {
     return (
       <div className="app_container">
@@ -70,19 +115,11 @@ class Home extends Component {
           updateActiveTab={this.updateActiveTab}
         />
         <Introtext />
-        <MyWork
-          projects={myProjects}
-          click={this.click}
-          onClick={this.showProject}
-        />
-        {/*
-        <ProjectPage
-          show={this.state.show}
-          handleClose={this.hideProject}
-          projects={myProjects}
-        />
-        */}
-        {this.renderActiveModal()}
+        <div className="wrapper">
+          <MyWork projects={myProjects} showProject={this.showProject} />
+          {this.renderActiveProject()}
+          {this.renderActiveModal()}
+        </div>
       </div>
     );
   }
