@@ -2,7 +2,7 @@ import ventrBackgroundImage from "./ventr/ventrSplash.png";
 import zelleBackgroundImage from "./zelleActivity/splash.png";
 // import portfolioBackgroundImage from "./porfolio/portfolioBackground.png"
 // import ScribdCBackgroundImage from "./scribdC/scribdCBackground.png";
-// import prototypeBackgroundImage from "./protoypes/prototypesBackgroundImages.png"
+import prototypeBackgroundImage from "./prototypes/concierge_chatbot.gif";
 // POSSIBLE FOR PROTOTYPES THAT IT MIGHT NOT BE PNG
 import ScribdPBackgroundImage from "./scribdP/scribdPBackground.png";
 import onBelayBackgroundImage from "./onBelay/onBelaySplash.png";
@@ -49,7 +49,7 @@ export const projects = [
     title: "Prototypes",
     description:
       "A collection of prototypes build in Framer Studio, Framer X and html/css/js.",
-    // image: prototypeBackgroundImage,
+    image: prototypeBackgroundImage,
     key: "prototypes"
   },
   {

@@ -38,19 +38,19 @@ import zelle8 from "./zelleActivity/zelle8.png";
 // import scribdP5 from "./scribdP/scribdP5.png";
 // import scribdP6 from "./scribdP/scribdP6.png";
 
-// import prototypeSplash from "./prototype/prototypeSplash.png";
-// import prototype1 from "./prototype/prototype1.png";
-// import prototype2 from "./prototype/prototype2.png";
-// import prototype3 from "./prototype/prototype3.png";
-// import prototype4 from "./prototype/prototype4.png";
-// import prototype5 from "./prototype/prototype5.png";
+import prototypeSplash from "./prototypes/concierge_chatbot.gif";
+import prototype1 from "./prototypes/concierge_loading.gif";
+import prototype2 from "./prototypes/ventr_menu.gif";
+// import prototype3 from "./prototypes/prototype3.png";
+// import prototype4 from "./prototypes/prototype4.png";
+// import prototype5 from "./prototypes/prototype5.png";
 
 import kalitaSplash from "./kalita/kalitaBackground.png";
-// import kalita1 from "./kalita/kalita1.png";
-// import kalita2 from "./kalita/kalita2.png";
-// import kalita3 from "./kalita/kalita3.png";
-// import kalita4 from "./kalita/kalita4.png";
-// import kalita5 from "./kalita/kalita5.png";
+import kalita1 from "./kalita/kalita1.png";
+import kalita2 from "./kalita/kalita2.png";
+import kalita3 from "./kalita/kalita3.png";
+import kalita4 from "./kalita/kalita4.png";
+import kalita5 from "./kalita/kalita5.png";
 
 import onBelaySplash from "./onBelay/onBelaySplash.png";
 import onBelay1 from "./onBelay/onBelay1.png";
@@ -180,23 +180,27 @@ export const projectData = [
       },
       {
         image: "#",
-        title: "Early Ideation",
-        paragraph: "text"
+        title: "React",
+        paragraph:
+          "This portfolio was a way for me to dive deeper into React.  I've worked on examples and small components in Framer X, but makign a full website in React taught me so much more, and also caused a lot of late nights!  I'm still learning but I'm excited about how design and development can get closer together with React."
       },
       {
         image: "#",
-        title: "Early Ideation",
-        paragraph: "text"
+        title: "Modern CSS",
+        paragraph:
+          "I've had a bit of experience with flexbox in my work at Scribd, but this protfolio let me work more on flexbox while also trying out grid.  I'm using grid for displaying the project on My Work and the persistent tabbed navigation on mobile screen sizes."
       },
       {
         image: "#",
-        title: "Early Ideation",
-        paragraph: "text"
+        title: "Please explore the site!",
+        paragraph:
+          "Please explore the projects on the home page, click through the options on the outer navigation, and try the mobile version of the site.  If you find a bug please be kind and let me know at writetimcarlson@gmail.com"
       },
       {
         image: "#",
-        title: "Early Ideation",
-        paragraph: "text"
+        title: "Launched Late 2018",
+        paragraph:
+          "Even figured out how to host and deploy a React app wasn't easy!  I launched this in late 2018 and I'm already working on improvements!"
       }
     ]
   },
@@ -287,20 +291,20 @@ export const projectData = [
       "This past year I've been learning front end develepment to better understand, communicate and contribute to the development process in my work. I'm also learning modern css and js so that I can create interactive and high fidelity prototypes quickly.  I've found prototypes often communicate your idea better to stakeholders, help with user testing and are much quicker and cheaper if you fail than building a full feature!",
     tools: "Framer Studio, Framer X, html/css/js",
     resonsibilities: "UX, UI & Illustrations",
-    image: "../ass",
+    image: prototypeSplash,
     content: [
       {
-        image: "#",
-        title: "Early Ideation",
+        image: null,
+        title: "Scribd Concierge",
         paragraph: "text"
       },
       {
-        image: "#",
-        title: "Early Ideation",
+        image: prototype1,
+        title: "Scribd Loading State",
         paragraph: "text"
       },
       {
-        image: "#",
+        image: prototype2,
         title: "Early Ideation",
         paragraph: "text"
       },
@@ -331,46 +335,34 @@ export const projectData = [
     image: kalitaSplash,
     content: [
       {
-        image: "#",
+        image: kalita1,
         title: "Early Ideation",
         paragraph:
           "I worked with stakeholders from our parent company to create a framework for a modern highend ecommerce site, that was fully responsive. The site needed to mix products with large education blocks that would help provide a value add and drive engagement."
       },
       {
-        image: "#",
-        title: "Site Map",
-        paragraph:
-          "This was our first consumer-facing website, so I worked with stakeholders to make sure we covered all the pages we needed to effectively communicate with the customer and still fulfill wholesale needs. "
-      },
-      {
-        image: "#",
+        image: kalita2,
         title: "Mid Fidelity Wireframes",
         paragraph:
-          "TI made many mid fidelity iterations to explore the relationship between educational content and shopable products, both for desktop and mobile. I used these to explain responsive behavior and interactions with engineers, ensuring that they met techincal constraints."
+          "I made many mid fidelity iterations to explore the relationship between educational content and shopable products, both for desktop and mobile. I used these to explain responsive behavior and interactions with engineers, ensuring that they met techincal constraints."
       },
       {
-        image: "#",
+        image: kalita3,
         title: "Illustrations",
         paragraph:
           "I used illustrations to create a sense of playfulness but also to stand in as icons for a product line that comes in many different finshes."
       },
       {
-        image: "#",
+        image: kalita4,
         title: "Responsive Desktop",
         paragraph:
           "The final product was a responsive website with a desktop focus on exclusive content because there are so many e-commerce site for speciality coffee.  We featured our product lines (Tsubame) that couldn't be found elsewhere and also featured educational content from the owners of the company."
       },
       {
-        image: "#",
-        title: "Responsive Mobile",
+        image: kalita5,
+        title: "Responsive Mobile & Metrics",
         paragraph:
-          "The site was optimized for a mobile experience since this was an MVP before putting time and money into an iOS app.  The mobile site uses the illustrations as icons for our bestselling product lines as a tab bar instead of hiding them away in a hamburger menu"
-      },
-      {
-        image: "#",
-        title: "Metrics",
-        paragraph:
-          "The site was profitable within the first month!  We met our internal goal of explaining the value of our high end Tsubame line, leading to a 125% increase in sales of these products."
+          "The site was optimized for a mobile experience since this was an MVP before putting time and money into an iOS app.  The mobile site uses the illustrations as icons for our bestselling product lines as a tab bar instead of hiding them away in a hamburger menu.  The site was profitable within the first month!  We met our internal goal of explaining the value of our high end Tsubame line, leading to a 125% increase in sales of these products."
       }
     ]
   },

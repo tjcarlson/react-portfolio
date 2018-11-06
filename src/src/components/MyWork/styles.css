@@ -57,6 +57,10 @@ p {
   justify-items: center;
 }
 
+.description {
+  max-width: 80%;
+}
+
 @media (max-width: 950px) {
   .projectCards {
     width: 30vw;
