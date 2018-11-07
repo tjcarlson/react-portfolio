@@ -7,12 +7,21 @@ class Navbox extends Component {
     this.props.updateActiveTab(key);
   }
 
+  isActiveTab(tab) {
+    return tab.key === this.props.activeTab;
+  }
+
   renderNavTabs() {
     return this.props.navTabs.map((tab, index) => {
       return (
         <div key={tab.key} onClick={e => this.updateActiveTab(e, tab.key)}>
           <div id={tab.id}>
-            <a href={tab.href} className={`${tab.className} tabText`}>
+            <a
+              href={tab.href}
+              className={`${tab.className} ${
+                this.isActiveTab(tab) ? "activeTab" : ""
+              } tabText`}
+            >
               {tab.name}
             </a>
           </div>

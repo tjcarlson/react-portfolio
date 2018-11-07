@@ -6,15 +6,51 @@ import ventr4 from "./ventr/ventr4.png";
 import ventr5 from "./ventr/ventr5.png";
 
 import zelleSplash from "./zelleActivity/splash.png";
-import zelle1 from "./zelleActivity/activity_screen@2x.png";
-import zelle2 from "./zelleActivity/user_flow.png";
-import zelle3 from "./zelleActivity/activity_declined@2x.png";
-import zelle4 from "./zelleActivity/activity_declined@2x.png";
-import zelle5 from "./zelleActivity/activity_declined@2x.png";
-import zelle6 from "./zelleActivity/activity_declined@2x.png";
-import zelle7 from "./zelleActivity/activity_declined@2x.png";
-import zelle8 from "./zelleActivity/activity_declined@2x.png";
-import zelle9 from "./zelleActivity/activity_declined@2x.png";
+import zelle1 from "./zelleActivity/zelle1.png";
+import zelle2 from "./zelleActivity/zelle2.png";
+import zelle3 from "./zelleActivity/zelle3.png";
+import zelle4 from "./zelleActivity/zelle4.png";
+import zelle5 from "./zelleActivity/zelle5.png";
+import zelle6 from "./zelleActivity/zelle6.png";
+import zelle7 from "./zelleActivity/zelle7.png";
+import zelle8 from "./zelleActivity/zelle8.png";
+
+// import portfolioSplash from "./portfolio/portfolioSplash.png";
+// import portfolio1 from "./portfolio/portfolio1.png";
+// import portfolio2 from "./portfolio/portfolio2.png";
+// import portfolio3 from "./portfolio/portfolio3.png";
+// import portfolio4 from "./portfolio/portfolio4.png";
+// import portfolio5 from "./portfolio/portfolio5.png";
+
+// import scribdCSplash from "./scribdC/scribdCSplash.png";
+// import scribdC1 from "./scribdC/scribdC1.png";
+// import scribdC2 from "./scribdC/scribdC2.png";
+// import scribdC3 from "./scribdC/scribdC3.png";
+// import scribdC4 from "./scribdC/scribdC4.png";
+// import scribdC5 from "./scribdC/scribdC5.png";
+// import scribdC6 from "./scribdC/scribdC6.png";
+
+// import scribdPSplash from "./scribdP/scribdPSplash.png";
+// import scribdP1 from "./scribdP/scribdP1.png";
+// import scribdP2 from "./scribdP/scribdP2.png";
+// import scribdP3 from "./scribdP/scribdP3.png";
+// import scribdP4 from "./scribdP/scribdP4.png";
+// import scribdP5 from "./scribdP/scribdP5.png";
+// import scribdP6 from "./scribdP/scribdP6.png";
+
+import prototypeSplash from "./prototypes/concierge_chatbot.gif";
+import prototype1 from "./prototypes/concierge_loading.gif";
+import prototype2 from "./prototypes/ventr_menu.gif";
+// import prototype3 from "./prototypes/prototype3.png";
+// import prototype4 from "./prototypes/prototype4.png";
+// import prototype5 from "./prototypes/prototype5.png";
+
+import kalitaSplash from "./kalita/kalitaBackground.png";
+import kalita1 from "./kalita/kalita1.png";
+import kalita2 from "./kalita/kalita2.png";
+import kalita3 from "./kalita/kalita3.png";
+import kalita4 from "./kalita/kalita4.png";
+import kalita5 from "./kalita/kalita5.png";
 
 import onBelaySplash from "./onBelay/onBelaySplash.png";
 import onBelay1 from "./onBelay/onBelay1.png";
@@ -87,7 +123,7 @@ export const projectData = [
       },
       {
         image: zelle3,
-        title: "Mid Fidelity Wireframer",
+        title: "Mid Fidelity Wireframes",
         paragraph:
           "I explored a lot of options for presenting a large amount of information on one screen!  My mid fidelity iterations focused on finding a content hierarchy that displayed essential information while not turning into a cluttered list view."
       },
@@ -117,14 +153,14 @@ export const projectData = [
       },
       {
         image: zelle8,
-        title: "Metrics",
-        paragraph: "yes, it did well"
-      },
-      {
-        image: zelle9,
         title: "Flexible for future business needs",
         paragraph:
           "The design pattern also took into account future business goals for Zelle, including being adaptable to business to consumer disbursements and consumers paying businesses directly through Zelle."
+      },
+      {
+        image: null,
+        title: "Metrics",
+        paragraph: "yes, it did well"
       }
     ]
   },
@@ -144,6 +180,45 @@ export const projectData = [
       },
       {
         image: "#",
+        title: "React",
+        paragraph:
+          "This portfolio was a way for me to dive deeper into React.  I've worked on examples and small components in Framer X, but makign a full website in React taught me so much more, and also caused a lot of late nights!  I'm still learning but I'm excited about how design and development can get closer together with React."
+      },
+      {
+        image: "#",
+        title: "Modern CSS",
+        paragraph:
+          "I've had a bit of experience with flexbox in my work at Scribd, but this protfolio let me work more on flexbox while also trying out grid.  I'm using grid for displaying the project on My Work and the persistent tabbed navigation on mobile screen sizes."
+      },
+      {
+        image: "#",
+        title: "Please explore the site!",
+        paragraph:
+          "Please explore the projects on the home page, click through the options on the outer navigation, and try the mobile version of the site.  If you find a bug please be kind and let me know at writetimcarlson@gmail.com"
+      },
+      {
+        image: "#",
+        title: "Launched Late 2018",
+        paragraph:
+          "Even figured out how to host and deploy a React app wasn't easy!  I launched this in late 2018 and I'm already working on improvements!"
+      }
+    ]
+  },
+  {
+    key: "scribd_concierge",
+    title: "Scribd Book Concierge",
+    description: "This is a description",
+    tools: "Sketch, Framer",
+    resonsibilities: "UX, UI (with UI help from a teammate)",
+    //image: scribdCSplash,
+    content: [
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
         title: "Early Ideation",
         paragraph: "text"
       },
@@ -170,24 +245,12 @@ export const projectData = [
     ]
   },
   {
-    title: "Scribd Book Concierge",
-    description: "This is a description",
-    image: "#",
-    key: "scribd_concierge"
-  },
-  {
+    key: "scribd_personalization",
     title: "Scribd Mobile Personalization",
     description: "This is a description",
-    image: "#",
-    key: "scribd_personalization"
-  },
-  {
-    key: "prototypes",
-    title: "Prototypes",
-    description: "This past year I've been learning front end develepment to ",
-    tools: "Framer Studio, Framer X, html/css/js",
-    resonsibilities: "UX, UI & Illustrations",
-    image: "../ass",
+    tools: "Sketch",
+    resonsibilities: "UX & UI",
+    //image: scribdPSplash,
     content: [
       {
         image: "#",
@@ -201,6 +264,47 @@ export const projectData = [
       },
       {
         image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      },
+      {
+        image: "#",
+        title: "Early Ideation",
+        paragraph: "text"
+      }
+    ]
+  },
+  {
+    key: "prototypes",
+    title: "Prototypes",
+    description:
+      "This past year I've been learning front end develepment to better understand, communicate and contribute to the development process in my work. I'm also learning modern css and js so that I can create interactive and high fidelity prototypes quickly.  I've found prototypes often communicate your idea better to stakeholders, help with user testing and are much quicker and cheaper if you fail than building a full feature!",
+    tools: "Framer Studio, Framer X, html/css/js",
+    resonsibilities: "UX, UI & Illustrations",
+    image: prototypeSplash,
+    content: [
+      {
+        image: null,
+        title: "Scribd Concierge",
+        paragraph: "text"
+      },
+      {
+        image: prototype1,
+        title: "Scribd Loading State",
+        paragraph: "text"
+      },
+      {
+        image: prototype2,
         title: "Early Ideation",
         paragraph: "text"
       },
@@ -228,85 +332,78 @@ export const projectData = [
       "Kalita is a high-end Japanese home goods company that was well established in the wholesale market but losing out on great SEO and industry recognition by not having a direct to consumer store. We constantly received emails from customers asking to purchase products directly to make sure they were buying authentic products. We also needed a way to introduce a high-end line to the United States to build brand value.",
     tools: "Sketch, InVision, Lucidchart",
     resonsibilities: "UX, UI & Illustrations",
-    image: "../ass",
+    image: kalitaSplash,
     content: [
       {
-        image: "#",
+        image: kalita1,
         title: "Early Ideation",
         paragraph:
           "I worked with stakeholders from our parent company to create a framework for a modern highend ecommerce site, that was fully responsive. The site needed to mix products with large education blocks that would help provide a value add and drive engagement."
       },
       {
-        image: "#",
-        title: "Site Map",
-        paragraph:
-          "This was our first consumer-facing website, so I worked with stakeholders to make sure we covered all the pages we needed to effectively communicate with the customer and still fulfill wholesale needs. "
-      },
-      {
-        image: "#",
+        image: kalita2,
         title: "Mid Fidelity Wireframes",
         paragraph:
-          "TI made many mid fidelity iterations to explore the relationship between educational content and shopable products, both for desktop and mobile. I used these to explain responsive behavior and interactions with engineers, ensuring that they met techincal constraints."
+          "I made many mid fidelity iterations to explore the relationship between educational content and shopable products, both for desktop and mobile. I used these to explain responsive behavior and interactions with engineers, ensuring that they met techincal constraints."
       },
       {
-        image: "#",
+        image: kalita3,
         title: "Illustrations",
         paragraph:
           "I used illustrations to create a sense of playfulness but also to stand in as icons for a product line that comes in many different finshes."
       },
       {
-        image: "#",
+        image: kalita4,
         title: "Responsive Desktop",
         paragraph:
           "The final product was a responsive website with a desktop focus on exclusive content because there are so many e-commerce site for speciality coffee.  We featured our product lines (Tsubame) that couldn't be found elsewhere and also featured educational content from the owners of the company."
       },
       {
-        image: "#",
-        title: "Responsive Mobile",
+        image: kalita5,
+        title: "Responsive Mobile & Metrics",
         paragraph:
-          "The site was optimized for a mobile experience since this was an MVP before putting time and money into an iOS app.  The mobile site uses the illustrations as icons for our bestselling product lines as a tab bar instead of hiding them away in a hamburger menu"
+          "The site was optimized for a mobile experience since this was an MVP before putting time and money into an iOS app.  The mobile site uses the illustrations as icons for our bestselling product lines as a tab bar instead of hiding them away in a hamburger menu.  The site was profitable within the first month!  We met our internal goal of explaining the value of our high end Tsubame line, leading to a 125% increase in sales of these products."
+      }
+    ]
+  },
+  {
+    key: "onBelay",
+    title: "On Belay",
+    description:
+      "I’m passionate about rock climbing but the process of finding a climbing partner can be difficult.  The popularity of climbing has exploded in the past few years, but the most common way of finding a climbing partner is announcing that you're looking for a partner over the loudspeaker at the gym.  I wanted a better way for climbers to find a partner that works for their skill level and their schedule! My project became On Belay, a simple and intuitive iOS app that focuses on helping climbers find a partner, explore the community at their local gym and take an outdoor trip",
+    Tools: "Sketch, InVision, Lucidchart, Flinto",
+    Responsibilities: "UX, UI, and motion.",
+    bannerImage: onBelaySplash,
+    content: [
+      {
+        image: onBelay1,
+        title: "Research & Affinity Map",
+        paragraph:
+          "I did interviews at indoor climbing gyms and outdoor climbing areas in Northern California.  The findings confirmed my hypothesis that climbers have difficulties finding a suitable partner and also gave me the insight that climbers wanted a way to meet in a group setting."
       },
       {
-        image: "#",
-        title: "Metrics",
+        image: onBelay2,
+        title: "Competitive Analysis",
         paragraph:
-          "The site was profitable within the first month!  We met our internal goal of explaining the value of our high end Tsubame line, leading to a 125% increase in sales of these products."
+          "On Belay fills a gap in the marketplace. The current apps that cater towards climbers are either very rudimentary or they try to lump climbing into a broad outdoor base."
       },
       {
-        key: "onbelay",
-        title: "On Belay",
-        description:
-          "I’m passionate about rock climbing but the process of finding a climbing partner can be difficult.  The popularity of climbing has exploded in the past few years, but the most common way of finding a climbing partner is announcing that you're looking for a partner over the loudspeaker at the gym.  I wanted a better way for climbers to find a partner that works for their skill level and their schedule! My project became On Belay, a simple and intuitive iOS app that focuses on helping climbers find a partner, explore the community at their local gym and take an outdoor trip",
-        Tools: "Sketch, InVision, Lucidchart, Flinto",
-        Responsibilities: "UX, UI, and motion.",
-        bannerImage: onBelaySplash,
-        content: [
-          {
-            image: onBelay1,
-            title: "test",
-            paragraph: "yes, testing"
-          },
-          {
-            image: onBelay2,
-            title: "test",
-            paragraph: "yes, testing"
-          },
-          {
-            image: onBelay3,
-            title: "test",
-            paragraph: "yes, testing"
-          },
-          {
-            image: onBelay4,
-            title: "test",
-            paragraph: "yes, testing"
-          },
-          {
-            image: onBelay5,
-            title: "test",
-            paragraph: "yes, testing"
-          }
-        ]
+        image: onBelay3,
+        title: "Site Map",
+        paragraph:
+          "A site map helped identify use cases & edge cases and helped me communicate better about the flows and workload with a developer."
+      },
+      {
+        image: onBelay4,
+        title: "Wireframes (adjusted after more testing)",
+        paragraph:
+          "My early sketches focused on a simple app that features designs that users see in dating or travel apps.  I did user testing again with my mid fidelity wireframes. I found that users were confused by the hamburger menu since there were only three main areas, so I pivoted to a bottom tab bar."
+      },
+      {
+        image: onBelay5,
+        title: "The Final Designs",
+        paragraph:
+          "The final design uses cards to standardize large amounts of data that are coming from different sources (climbing gyms, guides, etc) and a tab bar to let users quickly switch between different options to connect with the climbing community."
       }
     ]
   }

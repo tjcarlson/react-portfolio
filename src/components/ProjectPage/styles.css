@@ -85,18 +85,23 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 16px;
 }
 
 .footer div {
   height: 100px;
-  background-color: #ebf1ff;
+  background-color: #ffeeee;
   border-radius: 20px;
   padding: 32px;
-  margin: 32px;
+  margin: 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-content: space-evenly;
+}
+
+.footer h4 {
+  color: #52689b;
 }
 
 @media (max-width: 850px) {
@@ -162,13 +167,19 @@
   }
 
   .footer {
-    margin-bottom: 76px;
+    margin-bottom: 68px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 
   .footer div {
     padding: 8px;
     margin: 8px;
     text-align: center;
+    font-size: 14px;
+  }
+
+  .footer h4 {
     font-size: 14px;
   }
 }

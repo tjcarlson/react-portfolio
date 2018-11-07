@@ -72,6 +72,7 @@ export default class ProjectPage extends Component {
 
   switchProject = key => {
     this.props.switchProject(key);
+    this.projectWrapper.scrollTop = 0;
   };
 
   renderBlurbs() {
@@ -113,7 +114,7 @@ export default class ProjectPage extends Component {
 
   render() {
     return (
-      <div className="projectWrapper">
+      <div className="projectWrapper" ref={ref => (this.projectWrapper = ref)}>
         {this.props.hideProject}
         {this.renderClose()}
         <div className="projectBody">
