@@ -32,7 +32,12 @@ export default class ContactMe extends Component {
           </svg>
         </div>
         <div className="together">Let's make something together!</div>
-        <div className="email"> writetimcarlson@gmail.com</div>
+        <div className="email">
+          <a href="mailto:writetimcarlson@gmail.com">
+            {" "}
+            <h4>writetimcarlson@gmail.com</h4>
+          </a>
+        </div>
       </div>
     );
   }

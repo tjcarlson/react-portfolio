@@ -1,10 +1,10 @@
 .contactMe {
   background: #51689b;
-  background-image: url("../assets/blob2.svg");
+  /*background-image: url("../assets/waveBackground.svg");*/
   color: #fff;
   z-index: 5;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,10 +14,14 @@
   overflow-x: hidden;
   margin: 80px;
   transition: background-color 0.3s ease;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
+    0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .together {
-  width: 50%;
+  width: 100%;
   top: 0;
   left: 0;
   padding: 32px;
@@ -25,8 +29,42 @@
   color: white;
   font-family: "Circular Medium";
   display: flex;
-  align-items: center;
-  text-align: center;
+  text-align: left;
+}
+
+.email {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  /* bottom: 0; */
+  background-color: white;
+  right: 40px;
+  padding: 32px;
+  margin-top: 20%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-transform: translateX(4%) rotate(4deg);
+  -ms-transform: translateX(4%) rotate(4deg);
+  transform: translateX(-20%) rotate(20deg);
+}
+
+.email h4 {
+  font-size: 52px;
+  color: #51689b;
+  font-family: "Circular Medium";
+  -webkit-transform: translateX(4%) rotate(4deg);
+  -ms-transform: translateX(4%) rotate(4deg);
+  transform: translateX(4%) rotate(-20deg);
+  margin-top: 30%;
+}
+
+.email a {
+  position: relative;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
 }
 
 .close {
@@ -78,7 +116,29 @@
     -ms-flex-align: center;
     align-items: center;
     text-align: left;
-    width: 80%;
+    width: 75%;
     margin-left: 16px;
+  }
+
+  .email {
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    bottom: 60px;
+    margin: 16px;
+    right: 0;
+    /* padding: 32px; */
+    font-size: 24px;
+    color: #51689b;
+    font-family: "Circular Medium";
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    transform: translateX(-2%) rotate(20deg);
+  }
+
+  .email h4 {
+    font-size: 24px;
   }
 }
