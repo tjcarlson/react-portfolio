@@ -64,7 +64,7 @@ export const projectData = [
     key: "ventr",
     title: "Ventr",
     description:
-      "Ventr is a side project with Travis Crampton, all built in react native! Ventr is a way for folks who bike tour (extended bike camping trips) document, share and discover journies.",
+      "Ventr is a side project with Travis Crampton, all built in React Native! Ventr is a way for folks who bike tour (extended bike camping trips) to discover, document and share their journeys.",
     tools: "Figma & Framer",
     responsibilities: "UX, UI & Motion",
     bannerImage: ventrSplash,
@@ -79,13 +79,13 @@ export const projectData = [
         image: ventr2,
         title: "Profile Tab",
         paragraph:
-          "Profile tabs may be the least flashy part of most apps but the UX is important.  We used new material style forms so users always have a title on the form field."
+          "Profile sections may be the least flashy part of most apps but the UX is important.  We used new material style forms so users always have a title on the form field."
       },
       {
         image: ventr3,
         title: "Create a New Trip",
         paragraph:
-          "The fab on the home menu screen lets the user create a trip or add onto an existing trip.  The goal was to only ask for the essential information and guide the user into adding chapter (sections) into their trip."
+          "The fab on the home menu screen lets the user create a trip or add onto an existing trip.  The goal was to only ask for the essential information and guide the user into adding chapters (sections) into their trip."
       },
       {
         image: ventr4,
@@ -97,14 +97,15 @@ export const projectData = [
         image: ventr5,
         title: "The First Iteration",
         paragraph:
-          "Ventr is all built in react native and launching late 2018.  We learned a lot from the MVP and will be continuing to update and improve the product!"
+          "Ventr is all built in React Native and launching late 2018.  We learned a lot from the MVP and will be continuing to update and improve the product!"
       }
     ]
   },
   {
     key: "zelle_activity",
     title: "Zelle Activity",
-    description: "This is a description",
+    description:
+      "After the launch of the Zelle network in 2017 I was tasked with redoing our activity feed to give users more information about their payment history, increase functionality and better set expectations.  ",
     tools: "UX",
     responsibilities: "UX, UI (paired with another UI designer & motion",
     bannerImage: zelleSplash,
@@ -113,7 +114,7 @@ export const projectData = [
         image: zelle1,
         title: "Early Ideation",
         paragraph:
-          "Early sketches were focused on what information was missing from the first iteration of the activity feed, and what was not communicated well.  I used customer feedback to help drive the design process, with a goal of setting correct expectations for payments and timelines.  We also need to update to accomodate more screen sizes."
+          "Early sketches were focused on what information was missing from the first iteration of the activity feed, and what was not communicated well.  I used customer feedback to help drive the design process, with a goal of setting correct expectations for payments and timelines.  We also need to accomodate more screen sizes."
       },
       {
         image: zelle2,
@@ -149,18 +150,13 @@ export const projectData = [
         image: zelle7,
         title: "Component & Spec Example",
         paragraph:
-          "Here you can see an example of one of the components inside of the larger detail view, the chat bubbles.  This screen serves as a guide for front-end engineers to build the bubbles and deal with edge cases.  It includes zeplin spec links for both iOS and Android.  I also wrote the acceptance criteria alongside PM's."
+          "Here you can see an example of one of the components inside of the larger detail view, the chat bubbles.  This screen serves as a guide for front-end engineers to build the bubbles and deal with edge cases.  It includes zeplin spec links for both iOS and Android and I collaborated with PM's to write the acceptance criteria."
       },
       {
         image: zelle8,
         title: "Flexible for future business needs",
         paragraph:
           "The design pattern also took into account future business goals for Zelle, including being adaptable to business to consumer disbursements and consumers paying businesses directly through Zelle."
-      },
-      {
-        image: null,
-        title: "Metrics",
-        paragraph: "yes, it did well"
       }
     ]
   },
@@ -329,16 +325,16 @@ export const projectData = [
     key: "kalita",
     title: "Kalita USA",
     description:
-      "Kalita is a high-end Japanese home goods company that was well established in the wholesale market but losing out on great SEO and industry recognition by not having a direct to consumer store. We constantly received emails from customers asking to purchase products directly to make sure they were buying authentic products. We also needed a way to introduce a high-end line to the United States to build brand value.",
+      "Kalita is a high-end Japanese home goods company that was well established in the wholesale market but losing out on great SEO and industry recognition by not having a direct to consumer store. We constantly received emails from customers asking to purchase products directly to make sure they were buying authentic products. We also needed a way to introduce a high-end equipment line in the United States.",
     tools: "Sketch, InVision, Lucidchart",
-    resonsibilities: "UX, UI & Illustrations",
+    responsibilities: "UX, UI & Illustrations",
     image: kalitaSplash,
     content: [
       {
         image: kalita1,
         title: "Early Ideation",
         paragraph:
-          "I worked with stakeholders from our parent company to create a framework for a modern highend ecommerce site, that was fully responsive. The site needed to mix products with large education blocks that would help provide a value add and drive engagement."
+          "I worked with stakeholders from our parent company to create a framework for a modern high end e-commerce site, that was fully responsive. The site needed to mix products with large education blocks that would help provide a value add and drive engagement."
       },
       {
         image: kalita2,
@@ -371,8 +367,8 @@ export const projectData = [
     title: "On Belay",
     description:
       "I’m passionate about rock climbing but the process of finding a climbing partner can be difficult.  The popularity of climbing has exploded in the past few years, but the most common way of finding a climbing partner is announcing that you're looking for a partner over the loudspeaker at the gym.  I wanted a better way for climbers to find a partner that works for their skill level and their schedule! My project became On Belay, a simple and intuitive iOS app that focuses on helping climbers find a partner, explore the community at their local gym and take an outdoor trip",
-    Tools: "Sketch, InVision, Lucidchart, Flinto",
-    Responsibilities: "UX, UI, and motion.",
+    tools: "Sketch, InVision, Lucidchart, Flinto",
+    responsibilities: "UX, UI, and motion.",
     bannerImage: onBelaySplash,
     content: [
       {
