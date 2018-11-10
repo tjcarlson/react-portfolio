@@ -27,6 +27,7 @@
   justify-content: space-evenly;
   opacity: 0;
   transition: 0.3s ease-in;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .overlay:hover {
@@ -35,7 +36,7 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: 36px;
   text-align: center;
   margin: auto;
   color: #32034d;
@@ -43,10 +44,10 @@
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   color: #32034d;
-  opacity: 0.6;
+  opacity: 0.9;
   margin: auto;
 }
 
@@ -60,6 +61,11 @@ p {
 
 .description {
   max-width: 80%;
+}
+
+.photos {
+  position: relative;
+  width: 40vw;
 }
 
 @media (max-width: 950px) {
@@ -88,5 +94,21 @@ p {
     background-color: #fff;
     cursor: pointer;
     transition: 0.3s ease-in;
+  }
+
+  .title {
+    font-size: 24px;
+    text-align: center;
+    margin: auto;
+    color: #32034d;
+    max-width: 80%;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+    color: #32034d;
+    opacity: 0.9;
+    margin: auto;
   }
 }

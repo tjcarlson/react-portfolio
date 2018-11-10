@@ -35,13 +35,15 @@ export const projects = [
   },
   {
     title: "Scribd Book Concierge",
-    description: "This is a description",
+    description:
+      "Leveraging curated editorial lists to help user's their next favorite book!",
     // image: scribdCBackgroundImage,
     key: "scribd_concierge"
   },
   {
     title: "Scribd Mobile Personalization",
-    description: "This is a description",
+    description:
+      "Scribd's mobile personalization was a few years old when I joined, it wasn't helping jumpstart user recommendations because it was based on and outdate and unscalabe category tree.",
     image: ScribdPBackgroundImage,
     key: "scribd_personalization"
   },

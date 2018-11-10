@@ -16,7 +16,7 @@ import zelle7 from "./zelleActivity/zelle7.png";
 import zelle8 from "./zelleActivity/zelle8.png";
 
 // import portfolioSplash from "./portfolio/portfolioSplash.png";
-// import portfolio1 from "./portfolio/portfolio1.png";
+import portfolio1 from "./portfolio/portfolioSketch.png";
 // import portfolio2 from "./portfolio/portfolio2.png";
 // import portfolio3 from "./portfolio/portfolio3.png";
 // import portfolio4 from "./portfolio/portfolio4.png";
@@ -106,7 +106,7 @@ export const projectData = [
     title: "Zelle Activity",
     description:
       "After the launch of the Zelle network in 2017 I was tasked with redoing our activity feed to give users more information about their payment history, increase functionality and better set expectations.  ",
-    tools: "UX",
+    tools: "Sketch, Flinto, Framer",
     responsibilities: "UX, UI (paired with another UI designer & motion",
     bannerImage: zelleSplash,
     content: [
@@ -166,13 +166,14 @@ export const projectData = [
     description:
       "Is this too meta? Hear me out! I put this site on here becuase it represents me learning front end development and trying to bridge the gap between development and design.",
     tools: "React, css, Figma, ",
-    resonsibilities: "Development & Design :)",
+    responsibilities: "Development & Design :)",
     image: "../ass",
     content: [
       {
-        image: "#",
+        image: portfolio1,
         title: "Early Ideation",
-        paragraph: "text"
+        paragraph:
+          "Learning to code has also taught me to have a solid plan for the framework before you ever jump into an editor!  I spent a lot of time sketching out ideas for the site, how pages would work and what should become a component."
       },
       {
         image: "#",
@@ -203,14 +204,15 @@ export const projectData = [
   {
     key: "scribd_concierge",
     title: "Scribd Book Concierge",
-    description: "This is a description",
+    description:
+      "Leveraging curated editorial lists to help user's their next favorite book!",
     tools: "Sketch, Framer",
-    resonsibilities: "UX, UI (with UI help from a teammate)",
+    responsibilities: "UX, UI (with UI help from a teammate)",
     //image: scribdCSplash,
     content: [
       {
         image: "#",
-        title: "Early Ideation",
+        title: "What's a book concierge?",
         paragraph: "text"
       },
       {
@@ -220,22 +222,22 @@ export const projectData = [
       },
       {
         image: "#",
-        title: "Early Ideation",
+        title: "Low Fidelity Designs",
         paragraph: "text"
       },
       {
         image: "#",
-        title: "Early Ideation",
+        title: "Prototyping to fail faster",
         paragraph: "text"
       },
       {
         image: "#",
-        title: "Early Ideation",
+        title: "High Fidelity Designs",
         paragraph: "text"
       },
       {
         image: "#",
-        title: "Early Ideation",
+        title: "Optimized across device sizes",
         paragraph: "text"
       }
     ]
@@ -243,14 +245,15 @@ export const projectData = [
   {
     key: "scribd_personalization",
     title: "Scribd Mobile Personalization",
-    description: "This is a description",
+    description:
+      "Scribd's mobile personalization was a few years old when I joined, it wasn't helping jumpstart user recommendations because it was based on and outdate and unscalabe category tree.",
     tools: "Sketch",
-    resonsibilities: "UX & UI",
+    responsibilities: "UX & UI",
     //image: scribdPSplash,
     content: [
       {
         image: "#",
-        title: "Early Ideation",
+        title: "Why update our personalization?",
         paragraph: "text"
       },
       {
@@ -260,22 +263,22 @@ export const projectData = [
       },
       {
         image: "#",
-        title: "Early Ideation",
+        title: "Sketching with our dev team",
         paragraph: "text"
       },
       {
         image: "#",
-        title: "Early Ideation",
+        title: "Mid Fidelity",
         paragraph: "text"
       },
       {
         image: "#",
-        title: "Early Ideation",
+        title: "High Fidelity",
         paragraph: "text"
       },
       {
         image: "#",
-        title: "Early Ideation",
+        title: "An atomic approach to test content type preferences",
         paragraph: "text"
       }
     ]
@@ -286,23 +289,26 @@ export const projectData = [
     description:
       "This past year I've been learning front end develepment to better understand, communicate and contribute to the development process in my work. I'm also learning modern css and js so that I can create interactive and high fidelity prototypes quickly.  I've found prototypes often communicate your idea better to stakeholders, help with user testing and are much quicker and cheaper if you fail than building a full feature!",
     tools: "Framer Studio, Framer X, html/css/js",
-    resonsibilities: "UX, UI & Illustrations",
+    responsibilities: "I built all of these!",
     image: prototypeSplash,
     content: [
       {
-        image: null,
+        image: prototypeSplash,
         title: "Scribd Concierge",
-        paragraph: "text"
+        paragraph:
+          "The Scribd Concierge project is to help users find a book or audiobook recomendation through our curated editorial lists! One option we explored was a chatbot, so I built a Framer prototype to help stakeholders understand idea and interactions."
       },
       {
         image: prototype1,
         title: "Scribd Loading State",
-        paragraph: "text"
+        paragraph:
+          "I prototyped a few loading states for Scribd, both in code and using lottie. We ended up picking a shimmer state instead for this project."
       },
       {
         image: prototype2,
-        title: "Early Ideation",
-        paragraph: "text"
+        title: "Ventr Menu",
+        paragraph:
+          "An early Framer prototype to test the floating action button on a Ventr tab bar.  We used this to map out the flow for adding a new trip or a new chapter."
       },
       {
         image: "#",

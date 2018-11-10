@@ -134,10 +134,8 @@
   }
 
   .activeTab {
-    color: red !important;
+    color: #f6d0d0 !important;
   }
-
-  /* CONTACT ME TEXT IS NOT CENTERED!! */
 
   #top,
   #bottom,

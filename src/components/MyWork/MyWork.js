@@ -18,13 +18,14 @@ class MyWork extends Component {
             backgroundSize: "auto 100%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center"
-          }} //background image sizing
+          }}
           onClick={e => this.showProject(e, project.key)}
         >
           <div className="overlay">
             <h1 className="title">{project.title}</h1>
             <p className="description">{project.description}</p>
           </div>
+          <div className="photos" />
         </div>
       );
     });
