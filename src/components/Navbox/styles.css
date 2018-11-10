@@ -5,7 +5,7 @@
   background-color: #fff;
   position: fixed;
   transition: background-color 0.3s ease;
-  z-index: 500;
+  z-index: 4;
 }
 
 .social_links #top,
@@ -124,7 +124,7 @@
     left: 0;
     width: 100%;
     background: #fff;
-    z-index: 50;
+    z-index: 4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-content: center;

@@ -1,7 +1,7 @@
 .projectWrapper {
   background: #fff;
   color: #51689b;
-  z-index: 4;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -9,10 +9,10 @@
   bottom: 0;
   overflow-y: auto;
   overflow-x: hidden;
-  margin: 80px;
+  margin: 0px;
+  z-index: 5;
+
   transition: background-color 0.3s ease;
-  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
-    0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .reversedBlurbLayout {
@@ -33,7 +33,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  padding: 96px;
+  padding: 32px;
 }
 
 .blurbImage {
@@ -44,6 +44,10 @@
 .blurbText {
   width: 50%;
   padding: 12px;
+}
+
+.blurbText h2 {
+  color: #32034d;
 }
 
 .blurbText p {
