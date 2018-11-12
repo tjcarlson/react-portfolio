@@ -256,7 +256,7 @@ export const projectData = [
         image: scribdP2,
         title: "Research",
         paragraph:
-          "For all projects I do comprehensive research about what the competition and design led companies are doing for personalization.  Although our problem set is slightly differnet, it always helps to learn from others."
+          "For all projects I do comprehensive research about what the competition and design led companies are doing for personalization.  Although our problem set is slightly different, it always helps to learn from others."
       },
       {
         image: scribdP3,
@@ -267,18 +267,20 @@ export const projectData = [
       {
         image: scribdP4,
         title: "Mid Fidelity",
-        paragraph: "In Sketch I worked on building out full flows to FINISH!! "
+        paragraph:
+          "In Sketch I worked on building out full flows to work through our hypothesis about when to ask for content type preferences, genre interests and if we shoudl ask for individual title rankings."
       },
       {
         image: scribdP5,
         title: "High Fidelity",
-        paragraph: "text"
+        paragraph:
+          "In the final design we decided to split up fiction and non-fiction to reduce the cognitive load and limit the number of decisions on each step.  A user no longer has to scroll through 30+ genres. The visual design was updated to incorporate our illustrations and introduce more color."
       },
       {
         image: scribdP6,
         title: "An atomic approach to test content type preferences",
         paragraph:
-          "We built personalization in an atomic style, so we can add in or take out screens as necessary.  For the first test, we're adding in content types before genres to see if that matters to users in personalization."
+          "We built personalization in an atomic style, so we can add in or take out screens as necessary.  For the first test, we're adding in content types before genres to see how it changes the metrics."
       }
     ]
   },

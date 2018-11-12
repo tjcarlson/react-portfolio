@@ -47,12 +47,12 @@
 }
 
 .blurbText h2 {
-  color: #52689b;
+  color: rgba(0, 0, 0, 0.84);
 }
 
 .blurbText p {
   text-align: left;
-  color: #52689b;
+  color: rgba(0, 0, 0, 0.84);
 }
 
 .image {
