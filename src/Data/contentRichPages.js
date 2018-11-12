@@ -15,35 +15,30 @@ import zelle6 from "./zelleActivity/zelle6.png";
 import zelle7 from "./zelleActivity/zelle7.png";
 import zelle8 from "./zelleActivity/zelle8.png";
 
-// import portfolioSplash from "./portfolio/portfolioSplash.png";
+import portfolioSplash from "./portfolio/mobile1.png";
 import portfolio1 from "./portfolio/portfolioSketch.png";
-// import portfolio2 from "./portfolio/portfolio2.png";
-// import portfolio3 from "./portfolio/portfolio3.png";
-// import portfolio4 from "./portfolio/portfolio4.png";
-// import portfolio5 from "./portfolio/portfolio5.png";
+import portfolio2 from "./portfolio/react.png";
+import portfolio3 from "./portfolio/portfolio3.png";
+import portfolio4 from "./portfolio/portfolio2.png";
+import portfolio5 from "./portfolio/Slice.png";
 
-// import scribdCSplash from "./scribdC/scribdCSplash.png";
-// import scribdC1 from "./scribdC/scribdC1.png";
-// import scribdC2 from "./scribdC/scribdC2.png";
-// import scribdC3 from "./scribdC/scribdC3.png";
-// import scribdC4 from "./scribdC/scribdC4.png";
-// import scribdC5 from "./scribdC/scribdC5.png";
-// import scribdC6 from "./scribdC/scribdC6.png";
+import scribdCSplash from "./scribdC/scribdCSplash.png";
+import scribdC1 from "./scribdC/scribdC1.png";
+import scribdC2 from "./scribdC/scribdC2.png";
+import scribdC3 from "./scribdC/scribdC3.png";
+import scribdC4 from "./scribdC/scribdC4.png";
 
-// import scribdPSplash from "./scribdP/scribdPSplash.png";
-// import scribdP1 from "./scribdP/scribdP1.png";
-// import scribdP2 from "./scribdP/scribdP2.png";
-// import scribdP3 from "./scribdP/scribdP3.png";
-// import scribdP4 from "./scribdP/scribdP4.png";
-// import scribdP5 from "./scribdP/scribdP5.png";
-// import scribdP6 from "./scribdP/scribdP6.png";
+import scribdPSplash from "./scribdP/scribdPBackground.png";
+import scribdP1 from "./scribdP/scribdP1.svg";
+import scribdP2 from "./scribdP/scribdP2.svg";
+import scribdP3 from "./scribdP/scribdP3.png";
+import scribdP4 from "./scribdP/scribdP4.png";
+import scribdP5 from "./scribdP/scribdP5.png";
+import scribdP6 from "./scribdP/scribdP6.png";
 
 import prototypeSplash from "./prototypes/concierge_chatbot.gif";
 import prototype1 from "./prototypes/concierge_loading.gif";
 import prototype2 from "./prototypes/ventr_menu.gif";
-// import prototype3 from "./prototypes/prototype3.png";
-// import prototype4 from "./prototypes/prototype4.png";
-// import prototype5 from "./prototypes/prototype5.png";
 
 import kalitaSplash from "./kalita/kalitaBackground.png";
 import kalita1 from "./kalita/kalita1.png";
@@ -167,7 +162,7 @@ export const projectData = [
       "Is this too meta? Hear me out! I put this site on here becuase it represents me learning front end development and trying to bridge the gap between development and design.",
     tools: "React, css, Figma, ",
     responsibilities: "Development & Design :)",
-    image: "../ass",
+    image: portfolioSplash,
     content: [
       {
         image: portfolio1,
@@ -176,28 +171,28 @@ export const projectData = [
           "Learning to code has also taught me to have a solid plan for the framework before you ever jump into an editor!  I spent a lot of time sketching out ideas for the site, how pages would work and what should become a component."
       },
       {
-        image: "#",
+        image: portfolio2,
         title: "React",
         paragraph:
           "This portfolio was a way for me to dive deeper into React.  I've worked on examples and small components in Framer X, but makign a full website in React taught me so much more, and also caused a lot of late nights!  I'm still learning but I'm excited about how design and development can get closer together with React."
       },
       {
-        image: "#",
+        image: portfolio3,
         title: "Modern CSS",
         paragraph:
           "I've had a bit of experience with flexbox in my work at Scribd, but this protfolio let me work more on flexbox while also trying out grid.  I'm using grid for displaying the project on My Work and the persistent tabbed navigation on mobile screen sizes."
       },
       {
-        image: "#",
+        image: portfolio4,
         title: "Please explore the site!",
         paragraph:
           "Please explore the projects on the home page, click through the options on the outer navigation, and try the mobile version of the site.  If you find a bug please be kind and let me know at writetimcarlson@gmail.com"
       },
       {
-        image: "#",
+        image: portfolio5,
         title: "Launched Late 2018",
         paragraph:
-          "Even figured out how to host and deploy a React app wasn't easy!  I launched this in late 2018 and I'm already working on improvements!"
+          "Even figured out how to host and deploy a React app wasn't easy!  I launched this in late 2018 and I'm already working on improvements and hoping to fine tune the details with more animations."
       }
     ]
   },
@@ -208,37 +203,37 @@ export const projectData = [
       "Leveraging curated editorial lists to help user's their next favorite book!",
     tools: "Sketch, Framer",
     responsibilities: "UX, UI (with UI help from a teammate)",
-    //image: scribdCSplash,
+    image: scribdCSplash,
     content: [
       {
-        image: "#",
-        title: "What's a book concierge?",
-        paragraph: "text"
-      },
-      {
-        image: "#",
+        image: scribdC1,
         title: "Early Ideation",
-        paragraph: "text"
+        paragraph:
+          "Early work for concierge included competitive research, listening to our users and working with our editorial team to leverage their hard work.  I sketched a lot to go through ideas with developers and stakeholders."
       },
       {
-        image: "#",
+        image: scribdC2,
         title: "Low Fidelity Designs",
-        paragraph: "text"
+        paragraph:
+          "Low fidelity designs focused on fleshing out sketches to discover the good and bad about different approaches.  We tried a chatbot, an inline module on the home page and a full new tab on the native apps."
       },
       {
-        image: "#",
+        image: prototypeSplash,
         title: "Prototyping to fail faster",
-        paragraph: "text"
+        paragraph:
+          "After reviewing lo fi designs we narrowed it down to two ideas, a more traditional card route with a few steps or buidling a chatbot.  In order to get a better feel for the chatbox and explore some of the naunces I build a prototype in Framer!  It was a great experience, but after testing we decided the simpler card version was the best option for this project."
       },
       {
-        image: "#",
+        image: scribdC3,
         title: "High Fidelity Designs",
-        paragraph: "text"
+        paragraph:
+          "The final designs distilled the process into three simple steps for users, categories, then editoral list, then content in the format of large format cards.  I used variable sized cards for the first and second steps so the experience scales across any device size."
       },
       {
-        image: "#",
+        image: scribdC4,
         title: "Optimized across device sizes",
-        paragraph: "text"
+        paragraph:
+          "I created a lengthy spec and interaction document to show how the module should work across screen sizes, taking special care for the growth in android devices we've seen recently and the new larger format iPads."
       }
     ]
   },
@@ -249,37 +244,41 @@ export const projectData = [
       "Scribd's mobile personalization was a few years old when I joined, it wasn't helping jumpstart user recommendations because it was based on and outdate and unscalabe category tree.",
     tools: "Sketch",
     responsibilities: "UX & UI",
-    //image: scribdPSplash,
+    image: scribdPSplash,
     content: [
       {
-        image: "#",
+        image: scribdP1,
         title: "Why update our personalization?",
-        paragraph: "text"
+        paragraph:
+          "We had an overwhelming amount of text in a format that is hard to quickly parse or understand the content tree as a whole.  We needed to reduce cognative load and let the user know that their actions in personalization matter, while also trying to account for new content types."
       },
       {
-        image: "#",
-        title: "Early Ideation",
-        paragraph: "text"
+        image: scribdP2,
+        title: "Research",
+        paragraph:
+          "For all projects I do comprehensive research about what the competition and design led companies are doing for personalization.  Although our problem set is slightly differnet, it always helps to learn from others."
       },
       {
-        image: "#",
+        image: scribdP3,
         title: "Sketching with our dev team",
-        paragraph: "text"
+        paragraph:
+          "For a low fidelity review with the developers, qa and product folks from my squad, we went through sketches as a way to talk through the benefits and drawbacks of a few approaches we were trying."
       },
       {
-        image: "#",
+        image: scribdP4,
         title: "Mid Fidelity",
-        paragraph: "text"
+        paragraph: "In Sketch I worked on building out full flows to FINISH!! "
       },
       {
-        image: "#",
+        image: scribdP5,
         title: "High Fidelity",
         paragraph: "text"
       },
       {
-        image: "#",
+        image: scribdP6,
         title: "An atomic approach to test content type preferences",
-        paragraph: "text"
+        paragraph:
+          "We built personalization in an atomic style, so we can add in or take out screens as necessary.  For the first test, we're adding in content types before genres to see if that matters to users in personalization."
       }
     ]
   },
@@ -309,21 +308,6 @@ export const projectData = [
         title: "Ventr Menu",
         paragraph:
           "An early Framer prototype to test the floating action button on a Ventr tab bar.  We used this to map out the flow for adding a new trip or a new chapter."
-      },
-      {
-        image: "#",
-        title: "Early Ideation",
-        paragraph: "text"
-      },
-      {
-        image: "#",
-        title: "Early Ideation",
-        paragraph: "text"
-      },
-      {
-        image: "#",
-        title: "Early Ideation",
-        paragraph: "text"
       }
     ]
   },

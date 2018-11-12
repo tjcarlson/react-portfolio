@@ -1,9 +1,8 @@
 import ventrBackgroundImage from "./ventr/ventrSplash.png";
 import zelleBackgroundImage from "./zelleActivity/splash.png";
-// import portfolioBackgroundImage from "./porfolio/portfolioBackground.png"
-// import ScribdCBackgroundImage from "./scribdC/scribdCBackground.png";
+import portfolioBackgroundImage from "./portfolio/Slice.png";
+import scribdCBackgroundImage from "./scribdC/scribdCSplash.png";
 import prototypeBackgroundImage from "./prototypes/concierge_chatbot.gif";
-// POSSIBLE FOR PROTOTYPES THAT IT MIGHT NOT BE PNG
 import ScribdPBackgroundImage from "./scribdP/scribdPBackground.png";
 import onBelayBackgroundImage from "./onBelay/onBelaySplash.png";
 import kalitaBackgroundImage from "./kalita/kalitaBackground.png";
@@ -30,14 +29,14 @@ export const projects = [
     type: "UX, UI, Development (React)",
     description:
       "Is this too meta? Hear me out! I put this site on here becuase it represents me learning front end development and trying to bridge the gap between development and design.",
-    // image: portfolioBackgroundImage,
+    image: portfolioBackgroundImage,
     key: "portfolio"
   },
   {
     title: "Scribd Book Concierge",
     description:
       "Leveraging curated editorial lists to help user's their next favorite book!",
-    // image: scribdCBackgroundImage,
+    image: scribdCBackgroundImage,
     key: "scribd_concierge"
   },
   {

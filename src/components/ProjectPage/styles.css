@@ -47,13 +47,12 @@
 }
 
 .blurbText h2 {
-  color: #32034d;
+  color: #52689b;
 }
 
 .blurbText p {
   text-align: left;
-  color: #32034d;
-  opacity: 0.8;
+  color: #52689b;
 }
 
 .image {
@@ -106,21 +105,6 @@
 
 .footer h4 {
   color: #52689b;
-}
-
-@media (max-width: 850px) {
-  .projectWrapper {
-    margin: 60px;
-  }
-
-  .bannerImage {
-    width: 90%;
-    margin: 16px auto;
-  }
-
-  .exit {
-    padding: 76px;
-  }
 }
 
 @media (max-width: 450px) {

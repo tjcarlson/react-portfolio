@@ -2,7 +2,7 @@
   background: #51689b;
   /*background-image: url("../assets/waveBackground.svg");*/
   color: #fff;
-  z-index: 5;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   position: fixed;
