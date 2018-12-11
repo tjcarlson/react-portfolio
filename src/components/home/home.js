@@ -43,13 +43,27 @@ class Home extends Component {
     this.setState({
       activeTab: tabKey
     });
+
+    let direction = tabKey === "my_work" ? "remove" : "add";
+    this.handleBodyScroll(direction);
   };
 
   closeModal = () => {
-    this.setState({
-      activeTab: "my_work"
-    });
+    this.setState(
+      {
+        activeTab: "my_work"
+      },
+      this.handleBodyScroll("remove")
+    );
   };
+
+  handleBodyScroll(direction) {
+    if (direction === "add") {
+      document.querySelector("body").classList.add("no_scrollin");
+    } else {
+      document.querySelector("body").classList.remove("no_scrollin");
+    }
+  }
 
   renderActiveModal = () => {
     const modalProps = { closeModal: this.closeModal };

@@ -86,7 +86,7 @@ export const projectData = [
         image: ventr4,
         title: "My Trips & Trip Detail Screen",
         paragraph:
-          "Bikers can browse past, current and upcoming trips on their My Trips tab.  On the Trip page, Chapters are show in chronological order with a few key snippets of information, the date, trip length and reading stats."
+          "Bikers can browse past, current, and upcoming trips on their My Trips tab.  On the Trip page, Chapters are show in chronological order with a few key snippets of information: the date, trip length, and reading stats."
       },
       {
         image: ventr5,
@@ -115,7 +115,7 @@ export const projectData = [
         image: zelle2,
         title: "User Journey",
         paragraph:
-          "A big part of setting better expectations was mapping out the full user journey for activity.  There were for types of users, Requestors (sending the request), Responders (responding to requst), Sender (sending a payment) and Recepient (reciving a payment), each with their own unique needs."
+          "A big part of setting better expectations was mapping out the full user journey for activity.  There were four types of users, Requestors (sending the request), Responders (responding to requst), Sender (sending a payment) and Recepient (reciving a payment), each with their own unique needs."
       },
       {
         image: zelle3,
@@ -159,7 +159,7 @@ export const projectData = [
     key: "portfolio",
     title: "This portfolio!",
     description:
-      "Is this too meta? Hear me out! I put this site on here becuase it represents me learning front end development and trying to bridge the gap between development and design.",
+      "Is this too meta? Hear me out! I put this site on here because it represents me learning front end development and trying to bridge the gap between development and design.",
     tools: "React, css, Figma, ",
     responsibilities: "Development & Design :)",
     image: portfolioSplash,
@@ -174,13 +174,13 @@ export const projectData = [
         image: portfolio2,
         title: "React",
         paragraph:
-          "This portfolio was a way for me to dive deeper into React.  I've worked on examples and small components in Framer X, but makign a full website in React taught me so much more, and also caused a lot of late nights!  I'm still learning but I'm excited about how design and development can get closer together with React."
+          "This portfolio was a way for me to dive deeper into React.  I've worked on examples and small components in Framer X, but making a full website in React taught me so much more, and also caused a lot of late nights!  I'm still learning but I'm excited about how design and development can get closer together with React."
       },
       {
         image: portfolio3,
         title: "Modern CSS",
         paragraph:
-          "I've had a bit of experience with flexbox in my work at Scribd, but this protfolio let me work more on flexbox while also trying out grid.  I'm using grid for displaying the project on My Work and the persistent tabbed navigation on mobile screen sizes."
+          "I've had a bit of experience with flexbox in my work at Scribd, but this portfolio let me work more on flexbox while also trying out grid.  I'm using grid for displaying the project on My Work and the persistent tabbed navigation on mobile screen sizes."
       },
       {
         image: portfolio4,
@@ -200,7 +200,7 @@ export const projectData = [
     key: "scribd_concierge",
     title: "Scribd Book Concierge",
     description:
-      "Leveraging curated editorial lists to help user's their next favorite book!",
+      "Leveraging curated editorial lists to help a user find their next favorite book!",
     tools: "Sketch, Framer",
     responsibilities: "UX, UI (with UI help from a teammate)",
     image: scribdCSplash,
@@ -241,7 +241,7 @@ export const projectData = [
     key: "scribd_personalization",
     title: "Scribd Mobile Personalization",
     description:
-      "Scribd's mobile personalization was a few years old when I joined, it wasn't helping jumpstart user recommendations because it was based on and outdate and unscalabe category tree.",
+      "Scribd's mobile personalization was a few years old when I joined, it wasn't helping jumpstart user recommendations because it was based on an outdated and unscalable category tree.",
     tools: "Sketch",
     responsibilities: "UX & UI",
     image: scribdPSplash,

@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import "./styles.css";
 
 export default class ProjectPage extends Component {
+  componentWillMount() {
+    document.querySelector("body").classList.add("no_scrollin");
+  }
+
+  componentWillUnmount() {
+    document.querySelector("body").classList.remove("no_scrollin");
+  }
+
   renderIntro() {
     return (
       <div className="introSection">

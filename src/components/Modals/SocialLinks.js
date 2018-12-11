@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import ModalsBase from "./ModalsBase";
+
 import "./sociallinks.css";
 
-export default class SocialLinks extends Component {
+export default class SocialLinks extends ModalsBase {
   render() {
     return (
       <div className="socialLinks">

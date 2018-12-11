@@ -7,7 +7,7 @@ class Introtext extends Component {
   render() {
     return (
       <h1 className="intro">
-        I'm product designer in San Francisco who's passionate about building
+        I'm a product designer in San Francisco who's passionate about building
         products from concept to shipment and getting the details right along
         the way. Previously at Zelle, now at Scribd, and open to select
         freelance projects.

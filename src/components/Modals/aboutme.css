@@ -60,9 +60,12 @@
   transform: translateX(-10%) rotate(-5deg);
 }
 
+.aboutme a {
+  color: #a5a5a5;
+}
+
 .aboutme a:visited {
   color: #32034d;
-  opacity: 0.8;
 }
 
 @media (max-width: 850px) {

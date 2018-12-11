@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import ModalsBase from "./ModalsBase";
 import "./contactme.css";
 
-export default class ContactMe extends Component {
+export default class ContactMe extends ModalsBase {
   render() {
     return (
       <div className="contactMe">

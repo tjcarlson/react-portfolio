@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import ModalsBase from "./ModalsBase";
 import "./aboutme.css";
 
-export default class AboutMe extends Component {
+export default class AboutMe extends ModalsBase {
   render() {
     return (
       <div className="aboutme">
@@ -47,8 +48,8 @@ export default class AboutMe extends Component {
           </div>
           <div className="blurb2">
             <h3>
-              I've spent the past year learning front end development! I love to{" "}
-              <a>prototype</a> and <a>I made this portfolio in react.</a>
+              I've spent the past year learning front end development! I love to
+              prototype and I made this portfolio in react.
             </h3>
           </div>
           <div className="blurb3">

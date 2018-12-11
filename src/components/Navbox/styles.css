@@ -115,8 +115,6 @@
   transform: rotate(-90deg) translate(-50%, 0);
 }
 
-/* GO THROUGH ALL AND REWRITE FOR MOBILE STYLES....take off*/
-
 @media (max-width: 450px) {
   .navContainer {
     position: fixed;
@@ -129,7 +127,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-content: center;
     text-align: center;
-    height: 60px;
+    height: 80px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
   }
 

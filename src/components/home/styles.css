@@ -5,6 +5,11 @@ body {
   font-family: "Circular Regular", sans-serif;
 }
 
+body.no_scrollin {
+  height: 100%;
+  overflow: hidden;
+}
+
 .app_container {
   padding: 80px;
 }
